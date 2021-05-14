@@ -1,6 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #eaebd3;
     overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -34,26 +42,30 @@ h1 {
     justify-content: center;
     width: 10vw;
     height: 8vh;
-    font-size: .8em;
+    font-size: .6em;
+    color: lightgray;
     opacity: 15%;
     background-color: #444;
     border: 3px solid lightgray;
     margin-top: 10vh;
 }
 
+content {
+    font-family: 'Open Sans', sans-serif;
+}
+
 #about {
     height: 100vh;
     width: 70vw;
-    padding-left: 15vw;
+    padding: 8vh 0px 0px 15vw;
 }
 
 #about-heading {
-    font-family: 'Open Sans', sans-serif;
     font-size: 4em;
 }
 
 #about-heading > span {
-    padding-left: 1vw;
+    padding-left: 2vw;
 }
 
 #about > p {
