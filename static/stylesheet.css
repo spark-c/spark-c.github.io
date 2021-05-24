@@ -91,13 +91,13 @@ section {
 #projects > p {
     text-align: center;
     font-size: 1.5em;
-    padding-bottom: 5vh;
+    padding-bottom: 2vh;
 }
 
 #project-card-container {
     display: flex;
-    justify-content: space-evenly;
-    width: 70vw;
+    justify-content: space-between;
+    width: 80vw;
 }
 
 .project-card {
@@ -105,13 +105,33 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 7px;
+
+    background-color: black;
+    padding: 3vw 3vw 2vw 3vw;
+    margin: 0px 2vw 0px 2vw;
+}
+
+.first-card {
+    margin-left: 0px;
+}
+
+.last-card {
+    margin-right: 0px;
 }
 
 .project-card > img {
-    width: 400px;
-    height: 400px;
+
 }
 
 .project-card > label {
     
+}
+
+#project-desc-container {
+    width: 80vw;
+    min-height: 25vh;
+    background-color: black;
+    border-radius: 7px;
+    margin-top: 2vh;
 }
