@@ -6,6 +6,7 @@ body {
     display: flex;
     justify-content: center;
     color: #eaebd3;
+    background-color: black;
     overflow-x: hidden;
 }
 
@@ -26,19 +27,25 @@ h1 {
     
 }
 
-#nameblock {
+.nameblock {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     letter-spacing: 1vw;
 }
+.nameblock > .section-buttons {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
 
-#lastname {
+.lastname {
     letter-spacing: 2vw;
 }
 
-#continue-container {
+.continue-container {
     /* display: none; */
     display: flex;
     justify-content: center;
@@ -54,8 +61,8 @@ h1 {
 
 .header {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
-    height: 10vh;
+    grid-template-columns: 5vw 1.5fr 1fr 1fr 10vw;
+    /* height: 10vh; */
     border: 2px solid red
 }
 
@@ -63,10 +70,19 @@ h1 {
     grid-column: 2 / 3;
 }
 
+.header > .section-buttons {
+    grid-column: 3 / 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2vw;
+}
+
 .content {
     font-family: 'Open Sans', sans-serif;
-    width: 80vw;
-    max-width: 80vw;
+    width: 60vw;
+    max-width: 90vw;
+    min-height: 100vh;
     border: 2px solid green;
 }
 

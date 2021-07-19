@@ -1,14 +1,16 @@
 import React from 'react';
 
+import SectionButton from './SectionButton';
 
-const Header = () => {
+
+const Header = ({ children }) => {
 
     return (
         <div className="header">
             <h2 className="name">Collin Sparks</h2>
-            <h3 className="projects">Projects</h3> 
-            <h3 className="about">About</h3>
-            <h3 className="contact">Contact</h3>
+            <div className="section-buttons">
+                {children}
+            </div>
         </div>
     );
 };
