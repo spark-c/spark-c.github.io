@@ -10,7 +10,8 @@ const Nameblock = ({ selected, onSectionSelect }) => {
             <div className="nameblock">
                     <div className='firstname'>Collin</div>
                     <div className="lastname">Sparks</div>
-                    <SectionNav selected={selected} onSectionSelect={onSectionSelect} />
+                    <SectionNav selected={selected} onSectionSelect={onSectionSelect} drawBraces={true} />
+                    {/* drawBraces=true forces the '~'s to be used in buttons that are children of Nameblock. */}
             </div>
         </h1>
     );
