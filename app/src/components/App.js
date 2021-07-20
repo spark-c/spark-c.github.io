@@ -6,9 +6,12 @@ import Header from './Header';
 import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 
 const App = () => {
+    const isLargeScreen = useMediaQuery('(min-width:450px)');
+
     const [drawHeader, setDrawHeader] = useState(false);
     const [selected, setSelected] = useState("Projects");
     const sections = {
@@ -33,7 +36,8 @@ const App = () => {
             }
             <button onClick={() => setDrawHeader(!drawHeader)}>Swap!</button>
 
-            {section}
+            {isLargeScreen || drawHeader === true? section:undefined}
+            {/* if on mobile and using Nameblock, DON'T draw a section! */}
         </div>
     );
 };
