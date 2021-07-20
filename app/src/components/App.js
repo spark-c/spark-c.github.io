@@ -10,23 +10,26 @@ import Contact from './Contact';
 
 const App = () => {
     const [drawHeader, setDrawHeader] = useState(false);
+    const [selected, setSelected] = useState("Projects");
     const sections = {
         "Projects": <Projects />,
         "About": <About />,
         "Contact": <Contact />
     }
-    const [section, setSection] = useState("projects");
+    const [section, setSection] = useState(selected);
 
     const handleSectionSelect = (label) => {
-        setSection(sections[label]);
+        setSelected(label)
+        setSection(sections[selected]);
+        
     };
 
     return (
         <div className="content">
             {
             drawHeader === true?
-                <Header onSectionSelect={handleSectionSelect} />:
-                <Nameblock onSectionSelect={handleSectionSelect} />
+                <Header onSectionSelect={handleSectionSelect} selected={selected} />:
+                <Nameblock onSectionSelect={handleSectionSelect} selected={selected} />
             }
             <button onClick={() => setDrawHeader(!drawHeader)}>Swap!</button>
 

@@ -3,12 +3,12 @@ import React from 'react';
 import SectionNav from './SectionNav';
 
 
-const Header = ({ onSectionSelect }) => {
+const Header = ({ selected, onSectionSelect }) => {
 
     return (
         <div className="header">
             <h2 className="name">Collin Sparks</h2>
-            <SectionNav onSectionSelect={onSectionSelect} />
+            <SectionNav selected={selected} onSectionSelect={onSectionSelect} />
         </div>
     );
 };

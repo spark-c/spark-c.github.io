@@ -3,13 +3,13 @@ import React from 'react';
 import SectionButton from './SectionButton';
 
 
-const SectionNav = ({ onSectionSelect }) => {
+const SectionNav = ({ selected, onSectionSelect }) => {
 
     return (
         <div className="section-buttons">
-            <SectionButton onSectionSelect={onSectionSelect} label="Projects" target="Projects" />
-            <SectionButton onSectionSelect={onSectionSelect} label="About" target="About" />
-            <SectionButton onSectionSelect={onSectionSelect} label="Contact" target="Contact" />
+            <SectionButton selected={selected} onSectionSelect={onSectionSelect} label="Projects" target="Projects" />
+            <SectionButton selected={selected} onSectionSelect={onSectionSelect} label="About" target="About" />
+            <SectionButton selected={selected} onSectionSelect={onSectionSelect} label="Contact" target="Contact" />
         </div>
     );
 };

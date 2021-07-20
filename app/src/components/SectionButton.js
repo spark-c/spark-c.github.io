@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const SectionButton = ({ label, onSectionSelect }) => {
+const SectionButton = ({ label, selected, onSectionSelect }) => {
 
     const handleButton = (e) => {
         e.preventDefault();
@@ -10,7 +10,8 @@ const SectionButton = ({ label, onSectionSelect }) => {
 
     return (
         <button className="section-button" onClick={handleButton} >
-            <label>{`~ ${label} ~`}</label>
+            <label>{`~ ${label} ~`}</label><br/>
+            {label == selected? "A":""}
         </button>
     );
 };
