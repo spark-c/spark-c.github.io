@@ -20,7 +20,7 @@ const App = () => {
 
     const handleSectionSelect = (label) => {
         setSelected(label)
-        setSection(sections[selected]);
+        setSection(sections[label]);
         
     };
 

@@ -1,5 +1,134 @@
+/* Desktop */
+@media (min-width: 450px) {
+    html {
+        font-size: 20px;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        color: #eaebd3;
+        background-color: black;
+        overflow-x: hidden;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 100vw;
+        height: 100vh; */
+        background-color: black;
+        font-size: 4em;
+        font-family: 'Raleway', sans-serif;
+        
+    }
+
+    .nameblock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 1vw;
+    }
+    .nameblock > .section-buttons {
+        margin-top: 3vh;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .lastname {
+        letter-spacing: 2vw;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 5vw 1.5fr 1fr 1fr 10vw;
+        /* height: 10vh; */
+        border: 2px solid red
+    }
+
+    .header > .name {
+        grid-column: 2 / 3;
+        font-size: 1.5rem;
+    }
+
+    .header > .section-buttons {
+        grid-column: 3 / 5;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 6%;
+        padding-left: 2vw;
+    }
+
+    .section-buttons > button {
+        font-size: 1rem;
+    }
+
+    .content {
+        font-family: 'Open Sans', sans-serif;
+        width: 60vw;
+        max-width: 90vw;
+        min-height: 100vh;
+        border: 2px solid green;
+    }
+
+    section {
+        height: 100vh;
+        width: 70vw;
+        padding: 8vh 0px 0px 15vw;
+    }
+    button {
+        border:none;
+        background-color: transparent;
+        font-size: 1rem;
+    }
+
+    button:hover {
+        color: deeppink;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    button > label:hover {
+        color: deeppink;
+        cursor: pointer;
+        
+    }
+
+    .selected-marker {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 0px;
+    }
+
+    .continue-container {
+        /* display: none; */
+        display: flex;
+        justify-content: center;
+        width: 10vw;
+        height: 8vh;
+        font-size: .6em;
+        color: lightgray;
+        opacity: 15%;
+        background-color: #444;
+        border: 3px solid lightgray;
+        margin-top: 10vh;
+    }
+}
+
+/* Mobile */
 html {
-    font-size: 20px;
+    font-size: 15px;
     scroll-behavior: smooth;
 }
 
@@ -9,6 +138,14 @@ body {
     color: #eaebd3;
     background-color: black;
     overflow-x: hidden;
+}
+
+.content {
+    font-family: 'Open Sans', sans-serif;
+    width: 80vw;
+    max-width: 95vw;
+    min-height: 100vh;
+    border: 2px solid green;
 }
 
 a {
@@ -38,6 +175,7 @@ h1 {
 .nameblock > .section-buttons {
     margin-top: 3vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
 }
@@ -62,20 +200,13 @@ h1 {
     grid-column: 3 / 5;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 6%;
     padding-left: 2vw;
 }
 
 .section-buttons > button {
     font-size: 1rem;
-}
-
-.content {
-    font-family: 'Open Sans', sans-serif;
-    width: 60vw;
-    max-width: 90vw;
-    min-height: 100vh;
-    border: 2px solid green;
 }
 
 section {
@@ -121,4 +252,3 @@ button > label:hover {
     border: 3px solid lightgray;
     margin-top: 10vh;
 }
-
