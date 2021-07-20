@@ -1,4 +1,5 @@
 html {
+    font-size: 20px;
     scroll-behavior: smooth;
 }
 
@@ -45,20 +46,6 @@ h1 {
     letter-spacing: 2vw;
 }
 
-.continue-container {
-    /* display: none; */
-    display: flex;
-    justify-content: center;
-    width: 10vw;
-    height: 8vh;
-    font-size: .6em;
-    color: lightgray;
-    opacity: 15%;
-    background-color: #444;
-    border: 3px solid lightgray;
-    margin-top: 10vh;
-}
-
 .header {
     display: grid;
     grid-template-columns: 5vw 1.5fr 1fr 1fr 10vw;
@@ -68,6 +55,7 @@ h1 {
 
 .header > .name {
     grid-column: 2 / 3;
+    font-size: 1.5rem;
 }
 
 .header > .section-buttons {
@@ -76,6 +64,10 @@ h1 {
     justify-content: space-between;
     align-items: center;
     padding-left: 2vw;
+}
+
+.section-buttons > button {
+    font-size: 1rem;
 }
 
 .content {
@@ -90,5 +82,32 @@ section {
     height: 100vh;
     width: 70vw;
     padding: 8vh 0px 0px 15vw;
+}
+button {
+    border:none;
+    background-color: transparent;
+}
+
+button:hover {
+    color: deeppink;
+    cursor: pointer;
+}
+
+button > label:hover {
+    cursor: pointer;
+}
+
+.continue-container {
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+    height: 8vh;
+    font-size: .6em;
+    color: lightgray;
+    opacity: 15%;
+    background-color: #444;
+    border: 3px solid lightgray;
+    margin-top: 10vh;
 }
 

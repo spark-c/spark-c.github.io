@@ -1,16 +1,14 @@
 import React from 'react';
 
-import SectionButton from './SectionButton';
+import SectionNav from './SectionNav';
 
 
-const Header = ({ children }) => {
+const Header = ({ onSectionSelect }) => {
 
     return (
         <div className="header">
             <h2 className="name">Collin Sparks</h2>
-            <div className="section-buttons">
-                {children}
-            </div>
+            <SectionNav onSectionSelect={onSectionSelect} />
         </div>
     );
 };

@@ -3,32 +3,34 @@ import "./stylesheet.css";
 
 import Nameblock from './Nameblock';
 import Header from './Header';
-import SectionButton from './SectionButton'
+import Projects from './Projects';
+import About from './About';
+import Contact from './Contact';
 
 
 const App = () => {
     const [drawHeader, setDrawHeader] = useState(false);
+    const sections = {
+        "Projects": <Projects />,
+        "About": <About />,
+        "Contact": <Contact />
+    }
+    const [section, setSection] = useState("projects");
 
-    const header = (
-        <Header>
-            <SectionButton label="Projects" target="Projects" />
-            <SectionButton label="About" target="About" />
-            <SectionButton label="Contact" target="Contact" />
-        </Header>
-    );
-
-    const nameblock = (
-        <Nameblock>
-            <SectionButton label="Projects" target="Projects" />
-            <SectionButton label="About" target="About" />
-            <SectionButton label="Contact" target="Contact" />
-        </Nameblock>
-    );
+    const handleSectionSelect = (label) => {
+        setSection(sections[label]);
+    };
 
     return (
         <div className="content">
-            {drawHeader === true? header:nameblock}
+            {
+            drawHeader === true?
+                <Header onSectionSelect={handleSectionSelect} />:
+                <Nameblock onSectionSelect={handleSectionSelect} />
+            }
             <button onClick={() => setDrawHeader(!drawHeader)}>Swap!</button>
+
+            {section}
         </div>
     );
 };

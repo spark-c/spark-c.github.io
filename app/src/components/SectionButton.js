@@ -1,15 +1,15 @@
 import React from 'react';
 
 
-const SectionButton = ({ label, target }) => {
+const SectionButton = ({ label, onSectionSelect }) => {
 
     const handleButton = (e) => {
         e.preventDefault();
-        // console.log(`Clicked at ${label}!`)
+        onSectionSelect(label);
     };
 
     return (
-        <button className="section-button" onClick={handleButton}>
+        <button className="section-button" onClick={handleButton} >
             <label>{`~ ${label} ~`}</label>
         </button>
     );

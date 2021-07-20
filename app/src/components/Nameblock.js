@@ -1,18 +1,16 @@
 import React from 'react';
 
-import SectionButton from './SectionButton';
+import SectionNav from './SectionNav';
 
 
-const Nameblock = ({ children }) => {
+const Nameblock = ({ onSectionSelect }) => {
 
     return (
         <h1>
             <div className="nameblock">
                     <div className='firstname'>Collin</div>
                     <div className="lastname">Sparks</div>
-                    <div className="section-buttons">
-                        {children}
-                    </div>
+                    <SectionNav onSectionSelect={onSectionSelect} />
             </div>
         </h1>
     );
