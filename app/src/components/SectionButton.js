@@ -9,10 +9,14 @@ const SectionButton = ({ label, selected, onSectionSelect }) => {
     };
 
     return (
-        <button className="section-button" onClick={handleButton} >
-            <label>{`~ ${label} ~`}</label><br/>
-            {label == selected? "A":""}
-        </button>
+        <div className="section-button-container">
+            <button className="section-button" onClick={handleButton} >
+                <label>{`~ ${label} ~`}</label><br/>
+            </button>
+            <div className="selected-marker">
+                {label == selected? "^":""}
+            </div>
+        </div>
     );
 };
 

@@ -86,15 +86,26 @@ section {
 button {
     border:none;
     background-color: transparent;
+    font-size: 1rem;
 }
 
 button:hover {
     color: deeppink;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 button > label:hover {
+    color: deeppink;
     cursor: pointer;
+    
+}
+
+.selected-marker {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0px;
 }
 
 .continue-container {
