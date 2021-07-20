@@ -19,7 +19,7 @@ const SectionButton = ({ label, selected, onSectionSelect, drawBraces }) => {
                 <label>{renderedLabel}</label><br/>
             </button>
             <div className="selected-marker">
-                {label == selected && isLargeScreen? "^":""}
+                {label == selected? "^":""}
             </div>
         </div>
     );
