@@ -23,23 +23,29 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    font-size: 4em;
-    font-family: 'Raleway', sans-serif;
-    
-}
-
 .nameblock {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    font-size: 2em;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Raleway', sans-serif;
+    /* border: 2px solid green; */
+}
+
+.nameblock > .name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
     letter-spacing: 1vw;
+    /* padding-left: .4em; */
+    /* letter-spacing: 2vw; */
 }
 
 .section-button-container {
@@ -56,14 +62,9 @@ h1 {
     /* border: 2px solid green; */
 }
 
-.lastname {
-    padding-left: .4em;
-    letter-spacing: 2vw;
-}
-
 .instructions {
-    padding: 2em 0 0 0;
-    font-size: 1rem;
+    padding: 1em 0 0 0;
+    font-size: 1.2rem;
     letter-spacing: 3px;
 }
 
@@ -119,6 +120,11 @@ button {
     align-items: center;
     border: 2px solid red;
     margin-top: 5vh;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    letter-spacing: .1vw;
 }
 
 .selected-marker {
@@ -192,12 +198,26 @@ button {
     .header > .section-nav {
         grid-column: 3 / 5;
         display: flex;
+        align-items: center;
         padding-top: 6%;
         padding-left: 2vw;
     }
 
+    /* .header >
+    .section-nav >
+    .section-buttons >
+    .section-button-container >
+    button >
+    label {
+        letter-spacing: .3vw;
+    } */
+
     button {
         font-size: 1rem;
+    }
+
+    button > label {
+        letter-spacing: .3vw;
     }
 
     button:hover {

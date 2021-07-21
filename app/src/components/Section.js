@@ -11,7 +11,7 @@ const Section = ({ children, label }) => {
 
     return (
         <div className="section">
-            <div className="section-title">{titles[label]}</div>
+            <h1 className="section-title">_ {titles[label]} _</h1>
             {children}
         </div>
     );
