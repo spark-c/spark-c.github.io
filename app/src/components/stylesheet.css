@@ -137,6 +137,24 @@ button {
     letter-spacing: .1vw;
 }
 
+/* ProjectCards */
+.project-card {
+    border: 1px solid green;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2vw;
+}
+
+.project-title {
+    font-weight: 700;
+}
+
 .continue-container {
     /* display: none; */
     display: flex;
@@ -163,7 +181,7 @@ button {
         width: 60vw;
         max-width: 90vw;
     }
-    
+
     .selected-marker {
         font-size: 1rem;
         display: flex;
