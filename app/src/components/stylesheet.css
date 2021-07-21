@@ -1,132 +1,4 @@
-/* Desktop */
-@media (min-width: 450px) {
-    html {
-        font-size: 20px;
-        scroll-behavior: smooth;
-    }
-
-    body {
-        display: flex;
-        justify-content: center;
-        color: #eaebd3;
-        background-color: black;
-        overflow-x: hidden;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    h1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* width: 100vw;
-        height: 100vh; */
-        background-color: black;
-        font-size: 4em;
-        font-family: 'Raleway', sans-serif;
-        
-    }
-
-    .nameblock {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        letter-spacing: 1vw;
-    }
-    .nameblock > .section-buttons {
-        margin-top: 3vh;
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-
-    .lastname {
-        letter-spacing: 2vw;
-    }
-
-    .header {
-        display: grid;
-        grid-template-columns: 5vw 1.5fr 1fr 1fr 10vw;
-        /* height: 10vh; */
-        border: 2px solid red
-    }
-
-    .header > .name {
-        grid-column: 2 / 3;
-        font-size: 1.5rem;
-    }
-
-    .header > .section-buttons {
-        grid-column: 3 / 5;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding-top: 6%;
-        padding-left: 2vw;
-    }
-
-    .section-buttons > button {
-        font-size: 1rem;
-    }
-
-    .content {
-        font-family: 'Open Sans', sans-serif;
-        width: 60vw;
-        max-width: 90vw;
-        min-height: 100vh;
-        border: 2px solid green;
-    }
-
-    section {
-        height: 100vh;
-        width: 70vw;
-        padding: 8vh 0px 0px 15vw;
-    }
-    button {
-        border:none;
-        background-color: transparent;
-        font-size: 1rem;
-    }
-
-    button:hover {
-        color: deeppink;
-        cursor: pointer;
-        transform: scale(1.1);
-    }
-
-    button > label:hover {
-        color: deeppink;
-        cursor: pointer;
-        
-    }
-
-    .selected-marker {
-        font-size: 1rem;
-        display: flex;
-        justify-content: center;
-        letter-spacing: 0px;
-    }
-
-    .continue-container {
-        /* display: none; */
-        display: flex;
-        justify-content: center;
-        width: 10vw;
-        height: 8vh;
-        font-size: .6em;
-        color: lightgray;
-        opacity: 15%;
-        background-color: #444;
-        border: 3px solid lightgray;
-        margin-top: 10vh;
-    }
-}
-
-/* Mobile */
+/* Mobile */ 
 html {
     font-size: 15px;
     scroll-behavior: smooth;
@@ -145,7 +17,6 @@ body {
     width: 80vw;
     max-width: 95vw;
     min-height: 100vh;
-    border: 2px solid green;
 }
 
 a {
@@ -157,8 +28,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 100vw;
-    height: 100vh; */
     background-color: black;
     font-size: 4em;
     font-family: 'Raleway', sans-serif;
@@ -172,44 +41,63 @@ h1 {
     align-items: center;
     letter-spacing: 1vw;
 }
-.nameblock > .section-buttons {
+
+.section-button-container {
+    font-size: 1rem;
+}
+
+.nameblock > .section-nav > .section-buttons {
     margin-top: 3vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
-}
-
-.section-button {
-    border: 1px solid red;
+    /* border: 2px solid green; */
 }
 
 .lastname {
+    padding-left: .4em;
     letter-spacing: 2vw;
+}
+
+.instructions {
+    padding: 2em 0 0 0;
+    font-size: 1rem;
+    letter-spacing: 3px;
 }
 
 .header {
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .header > .name {
-    grid-column: 2 / 3;
     font-size: 1.5rem;
     display: none;
 }
 
-.header > .section-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 95%
+.header > .section-nav {
+    width: 90%;
 }
 
-.section-buttons > button {
-    font-size: 1rem;
+.header > .section-nav > .section-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.nameblock >
+    .section-nav >
+    .section-buttons >
+    .section-button-container >
+    button {
+    margin-bottom: 1em;
 }
 
 section {
@@ -217,6 +105,7 @@ section {
     width: 70vw;
     padding: 8vh 0px 0px 15vw;
 }
+
 button {
     border:none;
     background-color: transparent;
@@ -242,4 +131,76 @@ button {
     background-color: #444;
     border: 3px solid lightgray;
     margin-top: 10vh;
+}
+
+
+/* DESKTOP */
+@media (min-width: 450px) {
+    html {
+        font-size: 20px;
+    }
+
+    .content {
+        font-family: 'Open Sans', sans-serif;
+        width: 60vw;
+        max-width: 90vw;
+    }
+
+    .nameblock > .section-nav {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nameblock > .section-nav > .section-buttons {
+        flex-direction: row;
+    }
+
+    .section-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 5vw 1.5fr 1fr 1fr 10vw;
+    }
+
+    .header > .name {
+        display: block;
+        grid-column: 2 / 3;
+        font-size: 1.5rem;
+    }
+
+    .header > .section-nav {
+        grid-column: 3 / 5;
+        display: flex;
+        padding-top: 6%;
+        padding-left: 2vw;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    button:hover {
+        color: deeppink;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    button > label:hover {
+        color: deeppink;
+        cursor: pointer;
+        
+    }
+
+    .selected-marker {
+        font-size: 1rem;
+        display: flex;
+    }
 }

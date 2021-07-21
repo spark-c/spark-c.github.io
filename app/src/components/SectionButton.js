@@ -2,9 +2,9 @@ import React from 'react';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 
-const SectionButton = ({ label, selected, onSectionSelect, drawBraces }) => {
+const SectionButton = ({ label, selected, onSectionSelect, drawBraces, isLargeScreen }) => {
 
-    const isLargeScreen = useMediaQuery('(min-width: 450px)');
+    // const isLargeScreen = useMediaQuery('(min-width: 450px)');
 
     const handleButton = (e) => {
         e.preventDefault();
