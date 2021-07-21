@@ -1,7 +1,9 @@
 import React from 'react';
 
 
-const ProjectCard = ({ project, alignment }) => {
+const ProjectCard = ({ project, alignment, isLargeScreen }) => {
+
+
 
     return (
         <div className={`project-card ${alignment}`}>

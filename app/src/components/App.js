@@ -16,7 +16,7 @@ const App = () => {
     const [drawHeader, setDrawHeader] = useState(false);
     const [selected, setSelected] = useState("Projects");
     const sections = {
-        "Projects": <Projects />,
+        "Projects": <Projects isLargeScreen={isLargeScreen} />,
         "About": <About />,
         "Contact": <Contact />
     }
