@@ -1,10 +1,12 @@
 import React from 'react';
 
 
-const About = () => {
+const About = ({ title }) => {
 
     return (
-        <div className="section about">About</div>
+        <div className="about">
+            About Content
+        </div>
     );
 };
 

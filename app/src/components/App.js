@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import "./stylesheet.css";
 
 import Nameblock from './Nameblock';
 import Header from './Header';
+import Section from './Section';
 import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 
 const App = () => {
@@ -30,6 +31,12 @@ const App = () => {
         
     };
 
+    const renderedSection = (
+        <Section label={selected}>
+            {section}
+        </Section>
+    )
+
     return (
         <div className="content">
             {
@@ -39,7 +46,7 @@ const App = () => {
             }
             <button onClick={() => setDrawHeader(!drawHeader)}>Swap!</button>
 
-            {isLargeScreen || drawHeader === true? section:undefined}
+            {isLargeScreen || drawHeader === true? renderedSection:undefined}
             {/* if on mobile and using Nameblock, DON'T draw a section! */}
         </div>
     );
