@@ -22,7 +22,10 @@ const App = () => {
     const [section, setSection] = useState(selected);
 
     const handleSectionSelect = (label) => {
-        setSelected(label)
+        if (isLargeScreen === false) {
+            setDrawHeader(true);
+        };
+        setSelected(label);
         setSection(sections[label]);
         
     };

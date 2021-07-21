@@ -146,6 +146,10 @@ button {
         max-width: 90vw;
     }
 
+    .nameblock {
+        margin-top: 10vh;
+    }
+
     .nameblock > .section-nav {
         margin-top: 0;
         display: flex;
