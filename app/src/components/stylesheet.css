@@ -112,6 +112,15 @@ button {
     font-size: 1.3rem;
 }
 
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid red;
+    margin-top: 5vh;
+}
+
 .selected-marker {
     font-size: 1.5rem;
     display: flex;
