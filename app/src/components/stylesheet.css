@@ -197,6 +197,10 @@ button {
     justify-content: flex-start;
 }
 
+.project-img {
+    border-radius: 2px;
+}
+
 .project-title {
     margin-top: 1vh;
     font-weight: 700;
