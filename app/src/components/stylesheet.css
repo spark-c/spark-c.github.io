@@ -1,4 +1,9 @@
-/* Mobile */ 
+/* Mobile */
+:root {
+    --main-background-color: black;
+    --main-font-color: #eaebd3;
+}
+
 html {
     font-size: 15px;
     scroll-behavior: smooth;
@@ -7,8 +12,8 @@ html {
 body {
     display: flex;
     justify-content: center;
-    color: #eaebd3;
-    background-color: black;
+    color: var(--main-font-color);
+    background-color: var(--main-background-color);
     overflow-x: hidden;
 }
 
@@ -86,12 +91,18 @@ a {
 
 /* Header */
 .header {
-    margin-top: 20px;
+    background-color: var(--main-background-color);
+    /* background-color: black; */
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-
+    padding-top: 3vh;
+    /* sticky */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
 .header > .name {
