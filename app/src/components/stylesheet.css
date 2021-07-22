@@ -167,7 +167,7 @@ button {
 }
 
 /* Section */
-.section {
+.section-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -175,9 +175,20 @@ button {
     margin-top: 5vh;
 }
 
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .section-title {
     font-size: 1.5rem;
     letter-spacing: .1vw;
+    text-align: center;
+}
+
+.about-content {
+
 }
 
 /* ProjectCards */
