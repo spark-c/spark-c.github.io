@@ -144,11 +144,15 @@ button {
     justify-content: flex-start;
 }
 
+.right {
+    flex-direction: row-reverse;
+}
+
 .project-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2vw;
+    margin: 0 2vw 0 2vw;
 }
 
 .project-title {
