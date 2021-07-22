@@ -238,6 +238,25 @@ button {
     justify-content: space-evenly;
 }
 
+/* Contact */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contact-form > label {
+    margin-bottom: .2em;
+}
+
+.contact-form > input {
+    margin-bottom: 1em;
+}
+
+#message-input {
+    height: 15em;
+}
+
 .continue-container {
     /* display: none; */
     display: flex;

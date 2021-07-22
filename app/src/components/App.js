@@ -41,8 +41,13 @@ const App = () => {
         <div className="content">
             {
             drawHeader === true?
-                <Header onSectionSelect={handleSectionSelect} selected={selected} />:
-                <Nameblock onSectionSelect={handleSectionSelect} selected={selected} />
+                <Header
+                    onSectionSelect={handleSectionSelect}
+                    selected={selected}
+                    setDrawHeader={setDrawHeader}/>:
+                <Nameblock
+                    onSectionSelect={handleSectionSelect}
+                    selected={selected} />
             }
             <button onClick={() => setDrawHeader(!drawHeader)}>Swap!</button>
 
