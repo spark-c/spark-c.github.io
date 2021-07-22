@@ -91,6 +91,7 @@ a {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+
 }
 
 .header > .name {
@@ -139,13 +140,16 @@ button {
 
 /* ProjectCards */
 .project-card {
-    border: 1px solid green;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
+    border: 1px solid green;
 }
 
-.right {
-    flex-direction: row-reverse;
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .project-details {
@@ -156,7 +160,14 @@ button {
 }
 
 .project-title {
+    margin-top: 1vh;
     font-weight: 700;
+}
+
+.project-links {
+    padding: 1vh 0 1vh 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .continue-container {
@@ -262,5 +273,10 @@ button {
         color: deeppink;
         cursor: pointer;
         
+    }
+
+    /* ProjectCards */
+    .right {
+        flex-direction: row-reverse;
     }
 }
