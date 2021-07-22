@@ -20,7 +20,7 @@ const App = () => {
         "About": <About />,
         "Contact": <Contact />
     }
-    const [section, setSection] = useState(selected);
+    const [section, setSection] = useState(sections[selected]);
 
     const handleSectionSelect = (label) => {
         if (isLargeScreen === false) {
