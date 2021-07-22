@@ -93,12 +93,12 @@ a {
 .header {
     background-color: var(--main-background-color);
     /* background-color: black; */
-    margin-top: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
-    padding-top: 3vh;
+    padding-top: 1vh;
     /* sticky */
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -106,8 +106,10 @@ a {
 }
 
 .header > .name {
-    font-size: 1.5rem;
-    display: none;
+    font-size: 1rem;
+    letter-spacing: 2vw;
+    margin-bottom: .5vh;
+    /* display: none; */
 }
 
 .header > .section-nav {
@@ -122,11 +124,11 @@ a {
     width: 100%;
 }
 
-section {
+/* section {
     height: 100vh;
     width: 70vw;
     padding: 8vh 0px 0px 15vw;
-}
+} */
 
 button {
     border:none;
