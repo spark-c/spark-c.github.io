@@ -1,11 +1,12 @@
 import React from 'react';
 
 
-const About = ({ title }) => {
+const About = () => {
 
     return (
         <div className="about">
-            About Content
+            <h1 className="section-title">_ Hello there! :) _</h1>
+            <div className="about-content">About Content</div>
         </div>
     );
 };
