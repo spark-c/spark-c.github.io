@@ -175,6 +175,7 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 20vh;
 }
 
 .section {
@@ -435,6 +436,19 @@ button {
     }
 
     /* ProjectCards */
+    .project-card {
+        flex-direction: row;
+    }
+
+    .project-img { /* I'm pretty sure this is useless */
+        min-height: 100%;
+        width: auto;
+    }
+
+    .project-info {
+        width: 85%;
+    }
+
     .right {
         flex-direction: row-reverse;
     }
