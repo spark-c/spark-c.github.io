@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Socials from './Socials';
 
 
 const Contact = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
+
 
     return (
         <div className="section contact">
-            <h1 className="section-title">_ Contact me! :) _</h1>
+            <h1 className="section-title">[contact-title-placeholder]</h1>
             <Socials />
             <div className="contact-content">
-                <form className="contact-form">
+                <form
+                className="contact-form"
+                action={`mailto:cklsparks@gmail.com?cc=${email}`}
+                enctype="text/plain"
+                target="_blank">
                     <div className="short-fields">
                         <div className="name-input">
                             <label htmlFor="name-input">
@@ -19,7 +28,9 @@ const Contact = () => {
                             <input
                                 className="input short"
                                 id="name-input"
-                                type="text">
+                                type="text"
+                                value={name}
+                                onChange={e => setName(e.target.value)}>
                             </input>
                         </div>
 
@@ -30,7 +41,10 @@ const Contact = () => {
                             <input
                             className="input short"
                             id="email-input"
-                            type="text">
+                            type="text"
+                            name="sender"
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}>
                             </input>
                         </div>
                     </div>
@@ -41,7 +55,10 @@ const Contact = () => {
                     <input
                     className="input"
                     id="subject-input"
-                    type="text">
+                    type="text"
+                    name="subject"
+                    value={subject}
+                    onChange={e => setSubject(e.target.value)}>
                     </input>
                     
                     <label htmlFor="message-input">
@@ -49,7 +66,10 @@ const Contact = () => {
                     </label>
                     <textarea
                     className="input"
-                    id="message-input">
+                    id="message-input"
+                    name="body"
+                    value={message}
+                    onChange={e => setMessage(e.target.value)}>
                     </textarea>
 
                     <input

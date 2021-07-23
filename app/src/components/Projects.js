@@ -11,7 +11,9 @@ const Projects = ({ isLargeScreen }) => {
             "host-url": undefined,
             "github-url": "https://github.com/spark-c/baby-bot",
             "img-src": "https://via.placeholder.com/50.png",
-            "desc": "This is a longer description to test how things look when the descriptions start to get kinda long and require a lot of space to properly display on the screen.",
+            "desc": (
+                "This is a longer description to test how things look when the descriptions start to get kinda long and require a lot of space to properly display on the screen."
+            ),
             "stack": "Python (discord.py, SQLAlchemy) | Postgres | Heroku",
         },
         "web-contact-converter": {
@@ -19,7 +21,9 @@ const Projects = ({ isLargeScreen }) => {
             "host-url": "http://web-contact-converter.herokuapp.com",
             "github-url": "https://github.com/spark-c/web-contact-converter",
             "img-src": "https://via.placeholder.com/50.png",
-            "desc": "This is a longer description to test how things look when the descriptions start to get kinda long and require a lot of space to properly display on the screen.",
+            "desc": (
+                "This is a longer description to test how things look when the descriptions start to get kinda long and require a lot of space to properly display on the screen."
+            ),
             "stack": "Python (Flask, SQLAlchemy) | JavaScript | Postgres | Heroku"
         },
         "coffee-calculator": {
@@ -27,7 +31,9 @@ const Projects = ({ isLargeScreen }) => {
             "host-url": undefined,
             "github-url": "https://github.com/spark-c/coffee-calculator",
             "img-src": "https://via.placeholder.com/50.png",
-            "desc": "description",
+            "desc": (
+                "description"
+            ),
             "stack": "JavaScript (React)"
         }
     }
