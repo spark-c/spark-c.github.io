@@ -32,6 +32,15 @@ const Contact = () => {
                         </div>
                     </div>
 
+                    <label htmlFor="subject-input">
+                        Subject<span className="red">*</span>
+                    </label>
+                    <input
+                    className="input"
+                    id="subject-input"
+                    type="text">
+                    </input>
+                    
                     <label htmlFor="message-input">
                         Message<span className="red">*</span>
                     </label>

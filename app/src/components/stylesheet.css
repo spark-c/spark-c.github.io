@@ -269,9 +269,10 @@ button {
 
 #contact-submit {
     margin-top: 3vh;
-    width: 70%;
+    width: 60%;
     height: 2.5em;
     align-self: center;
+    font-size: 1rem;
     margin-bottom: 20vh;
 }
 
@@ -390,7 +391,6 @@ button {
         margin: 5vh 0;
     }
 
-
     /* ProjectCards */
     .right {
         flex-direction: row-reverse;
@@ -416,5 +416,8 @@ button {
         padding-right: 5vw;
     }
     
-
+    #contact-submit {
+        max-width: 200px;
+        font-size: .8rem;
+    }
 }
