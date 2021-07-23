@@ -237,6 +237,27 @@ button {
 }
 
 /* Contact */
+.socials-title {
+    background-color: var(--main-background-color);
+    font-size: 1.1rem;
+    position: relative;
+    translate: 0 10px;
+    width: min-content;
+    padding: 0 7px 3px 0px;
+}
+
+.socials-items {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3vh;
+    border: 1px solid var(--main-font-color);
+    margin-bottom: 1em;
+}
+
+.icon {
+
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;

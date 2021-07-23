@@ -1,11 +1,14 @@
 import React from 'react';
 
+import Socials from './Socials';
+
 
 const Contact = () => {
 
     return (
         <div className="section contact">
             <h1 className="section-title">_ Contact me! :) _</h1>
+            <Socials />
             <div className="contact-content">
                 <form className="contact-form">
                     <div className="short-fields">
