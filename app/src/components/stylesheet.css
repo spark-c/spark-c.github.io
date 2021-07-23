@@ -24,6 +24,12 @@ body {
     min-height: 100vh;
 }
 
+.swap {
+    font-size: .7rem;
+    border: 1px solid red;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -172,23 +178,19 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 5vh;
 }
 
 .section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 .section-title {
     font-size: 1.5rem;
     letter-spacing: .1vw;
     text-align: center;
-}
-
-.about-content {
-
 }
 
 /* ProjectCards */
@@ -243,18 +245,42 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 100%;
 }
 
-.contact-form > label {
+.contact-form label {
     margin-bottom: .2em;
+    font-weight: 700;
 }
 
-.contact-form > input {
+.contact-form .input {
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 1em;
+    border: none;
+    font-size: 1.1em;
+    height: 1.5em;
+}
+
+.name-input, .email-input {
+    display: flex;
+    flex-direction: column;
 }
 
 #message-input {
     height: 15em;
+    border: none;
+}
+
+#contact-submit {
+    margin-top: 3vh;
+    width: 70%;
+    height: 2.5em;
+    align-self: center;
+    margin-bottom: 20vh;
+}
+
+.red {
+    color: #990000;
 }
 
 .continue-container {
@@ -362,6 +388,12 @@ button {
         
     }
 
+    /* Section */
+    .section-title {
+        margin: 5vh 0;
+    }
+
+
     /* ProjectCards */
     .right {
         flex-direction: row-reverse;
@@ -370,4 +402,22 @@ button {
     .project-card:hover {
         border: 3px solid lightgray;
     }
+
+    /* Contact */
+    .short-fields {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .name-input, .email-input {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .name-input {
+        padding-right: 5vw;
+    }
+    
+
 }

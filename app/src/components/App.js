@@ -49,7 +49,6 @@ const App = () => {
                     onSectionSelect={handleSectionSelect}
                     selected={selected} />
             }
-            <button onClick={() => setDrawHeader(!drawHeader)}>Swap!</button>
 
             {isLargeScreen || drawHeader === true? renderedSection:undefined}
             {/* if on mobile and using Nameblock, DON'T draw a section! */}

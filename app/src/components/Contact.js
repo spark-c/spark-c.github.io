@@ -8,12 +8,43 @@ const Contact = () => {
             <h1 className="section-title">_ Contact me! :) _</h1>
             <div className="contact-content">
                 <form className="contact-form">
-                    <label for="name-input">Name</label>
-                    <input id="name-input" type="text"></input>
-                    <label for="email-input">Email</label>
-                    <input id="email-input" type="text"></input>
-                    <label for="message-input">Message</label>
-                    <input id="message-input" type="text"></input>
+                    <div className="short-fields">
+                        <div className="name-input">
+                            <label htmlFor="name-input">
+                                Name<span className="red">*</span>
+                            </label>
+                            <input
+                                className="input short"
+                                id="name-input"
+                                type="text">
+                            </input>
+                        </div>
+
+                        <div className="email-input">
+                            <label htmlFor="email-input">
+                                Email<span className="red">*</span>
+                            </label>
+                            <input
+                            className="input short"
+                            id="email-input"
+                            type="text">
+                            </input>
+                        </div>
+                    </div>
+
+                    <label htmlFor="message-input">
+                        Message<span className="red">*</span>
+                    </label>
+                    <textarea
+                    className="input"
+                    id="message-input">
+                    </textarea>
+
+                    <input
+                    id="contact-submit"
+                    type="submit"
+                    value="Submit!">
+                    </input>
                 </form>
             </div>
         </div>
