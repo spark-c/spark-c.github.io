@@ -135,6 +135,7 @@ a {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    z-index: 9;
 }
 
 .header > .name {
@@ -254,8 +255,27 @@ button {
     margin-bottom: 1em;
 }
 
-.icon {
+.socials-items a {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--main-font-color);
+}
 
+.fa-linkedin {
+    color: #007bb5;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+}
+
+.socials-items a:hover {
+    transform: scale(1.1);
+}
+
+.fa {
+    transform: scale(1.7);
+    padding-right: 10px;
 }
 
 .contact-form {
@@ -289,6 +309,8 @@ button {
 }
 
 #contact-submit {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
     margin-top: 3vh;
     width: 60%;
     height: 2.5em;
