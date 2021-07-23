@@ -6,7 +6,8 @@ import SectionNav from './SectionNav';
 
 const Nameblock = ({ selected, onSectionSelect }) => {
 
-    const isLargeScreen = useMediaQuery('(max-width:450px)');
+    const isLargeScreen = useMediaQuery('(min-width:450px)');
+    console.log(`isLargeScreen? ${isLargeScreen}`)
 
     return (
         <div className="nameblock">
@@ -22,8 +23,8 @@ const Nameblock = ({ selected, onSectionSelect }) => {
                 selected={selected}
                 onSectionSelect={onSectionSelect}
                 drawBraces={true}
-                isLargeScreen={isLargeScreen}
-            />
+                drawSelector={isLargeScreen}
+                isLargeScreen={isLargeScreen} />
             {/* drawBraces=true forces the '~'s to be used in buttons that are children of Nameblock. */}
         </div>
     );

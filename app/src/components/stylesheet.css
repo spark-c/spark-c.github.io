@@ -107,7 +107,7 @@ a {
     font-size: 1rem;
 }
 
-.nameblock > .section-nav > .section-buttons {
+.nameblock .section-buttons {
     margin-top: 3vh;
     display: flex;
     flex-direction: column;
@@ -117,11 +117,7 @@ a {
     /* border: 2px solid green; */
 }
 
-.nameblock >
-    .section-nav >
-    .section-buttons >
-    .section-button-container >
-    button {
+.nameblock button {
     margin-bottom: 1em;
 }
 
@@ -311,7 +307,7 @@ button {
     }
 
     .selected-marker {
-        font-size: 1rem;
+        font-size: 1.3rem;
         display: flex;
     }
 
@@ -331,6 +327,7 @@ button {
 
     .nameblock > .section-nav > .section-buttons {
         flex-direction: row;
+        align-items: flex-start;
     }
 
     .section-buttons {

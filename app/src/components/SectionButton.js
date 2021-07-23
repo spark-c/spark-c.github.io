@@ -7,6 +7,7 @@ const SectionButton = ({
     selected,
     onSectionSelect,
     drawBraces,
+    drawSelector,
     isLargeScreen
 }) => {
 
@@ -25,7 +26,7 @@ const SectionButton = ({
                 <label>{renderedLabel}</label><br/>
             </button>
             <div className="selected-marker">
-                {label == selected && !drawBraces? "^":""}
+                {label == selected && drawSelector? "^":""}
             </div>
         </div>
     );
