@@ -17,6 +17,10 @@ body {
     overflow-x: hidden;
 }
 
+.hidden {
+    display: none;
+}
+
 .content {
     font-family: 'Open Sans', sans-serif;
     width: 80vw;
@@ -276,7 +280,10 @@ button {
 
 .fa {
     transform: scale(1.7);
-    padding-right: 10px;
+}
+
+.social-label {
+    padding-left: 15px;
 }
 
 .contact-form {
