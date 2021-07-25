@@ -12,7 +12,11 @@ const Projects = ({ isLargeScreen }) => {
             "github-url": "https://github.com/spark-c/baby-bot",
             "img-src": "https://via.placeholder.com/50.png",
             "desc": (
-                "This is a longer description to test how things look when the descriptions start to get kinda long and require a lot of space to properly display on the screen."
+                <div>
+                    <p>This bot is created and maintained to provide commands for utility and entertainment on my personal Discord server!</p>
+                    <p>The project goes varying periods of light maintainance, heavy development for additional functionality, and occasional upkeep work to refactor old code to meet my improving code-quality standards.</p>
+                    <p className="cta">Click the "Live!" link to say hi and interact with SparksieBot!</p>
+                </div>
             ),
             "stack": "Python (discord.py, SQLAlchemy) | Postgres | Heroku",
         },
@@ -22,7 +26,10 @@ const Projects = ({ isLargeScreen }) => {
             "github-url": "https://github.com/spark-c/web-contact-converter",
             "img-src": "https://via.placeholder.com/50.png",
             "desc": (
-                "This is a longer description to test how things look when the descriptions start to get kinda long and require a lot of space to properly display on the screen."
+                <div>
+                    <p>A local company had a frequent task of manually transferring sales leads/contact information from a plain-text document into a spreadsheet -- which took <span className="italic">hours</span> at a time. This app is used to enormously expedite the process!</p>
+                    <p>Note: The app is served from a Heroku "free" dyno, and may take several seconds to load while it wakes up!</p>
+                </div>
             ),
             "stack": "Python (Flask, SQLAlchemy) | JavaScript | Postgres | Heroku"
         },
@@ -32,7 +39,10 @@ const Projects = ({ isLargeScreen }) => {
             "github-url": "https://github.com/spark-c/coffee-calculator",
             "img-src": "https://via.placeholder.com/50.png",
             "desc": (
-                "description"
+                <div>
+                    <p>A small web app used for calculating the necessary variables of a pour-over coffee recipe.</p>
+                    <p>There are several modes to account for the various common combinations of given/desired values to calculate. Soon including a setting for making iced coffee! Based on V60 paramters.</p>
+                </div>
             ),
             "stack": "JavaScript (React)"
         }

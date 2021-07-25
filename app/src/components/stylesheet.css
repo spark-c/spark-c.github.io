@@ -21,6 +21,15 @@ body {
     display: none;
 }
 
+.cta { /* call to action */
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
 .content {
     font-family: 'Open Sans', sans-serif;
     width: 80vw;
