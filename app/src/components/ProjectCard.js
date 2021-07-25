@@ -7,7 +7,9 @@ const ProjectCard = ({ project, alignment, isLargeScreen }) => {
 
     return (
         <div className={`project-card  ${alignment}`}>
-            <img className="project-img" src={project["img-src"]}></img>
+            <div className="img-container">
+                <img className="project-img" src={project["img-src"]} />
+            </div>
             <div className="project-info">
                 <div className="project-details">
                     <div className="project-title item-margin">

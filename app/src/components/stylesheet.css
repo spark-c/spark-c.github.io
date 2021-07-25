@@ -32,14 +32,13 @@ body {
 
 .content {
     font-family: 'Open Sans', sans-serif;
-    width: 80vw;
-    max-width: 95vw;
+    min-width: 80vw;
+    max-width: 90vw;
     min-height: 100vh;
 }
 
 .swap {
     font-size: .7rem;
-    border: 1px solid red;
     margin: 0;
 }
 
@@ -221,7 +220,15 @@ button {
     justify-content: flex-start;
 }
 
+.img-container {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    margin: 1vh 0 1vh 1vw;
+}
+
 .project-img {
+    width: 85%;
     border-radius: 2px;
 }
 
@@ -359,7 +366,7 @@ button {
 }
 
 
-/* DESKTOP */
+/* MEDIUM */
 @media (min-width: 450px) {
     html {
         font-size: 20px;
@@ -367,8 +374,9 @@ button {
 
     .content {
         font-family: 'Open Sans', sans-serif;
-        width: 50vw;
+        min-width: 50vw;
         max-width: 960px;
+        margin: 0 5vw;
     }
 
     .selected-marker {
@@ -457,20 +465,18 @@ button {
 
     /* ProjectCards */
     .project-card {
-        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-container {
+        display: flex;
+        justify-content: center;
+        min-width: 50%;
     }
 
-    .project-img { /* I'm pretty sure this is useless */
-        min-height: 100%;
-        width: auto;
-    }
-
-    .project-info {
-        width: 85%;
-    }
-
-    .right {
-        flex-direction: row-reverse;
+    .project-img {
+        min-width: 100%;
     }
 
     .project-card:hover {
@@ -497,4 +503,44 @@ button {
         max-width: 200px;
         font-size: .8rem;
     }
+}
+
+
+/* LARGER */
+@media (min-width: 900px) {
+    .content {
+        max-width: 960px;
+    }
+
+    /* ProjectCards */
+.project-card {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    margin-bottom: 3vh;
+    padding: 5px;
+    border: 3px solid darkgray;
+    border-radius: 2px;
+}
+
+.project-info {
+    grid-column: 4/12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1vh 0;
+    width: 100%;
+}
+
+.img-container {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.project-img {
+    border-radius: 2px;
+    width: 100%;
+}
 }
