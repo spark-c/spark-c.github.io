@@ -35,6 +35,13 @@ const SectionNav = ({
                     drawSelector={drawSelector}
                     label="Contact"
                     target="Contact" />
+                <SectionButton
+                    selected={selected}
+                    onSectionSelect={onSectionSelect}
+                    drawBraces={drawBraces}
+                    drawSelector={drawSelector}
+                    label="Blog"
+                    target="Blog" />
             </div>
         </div>
     );

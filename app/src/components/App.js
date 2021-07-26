@@ -8,6 +8,7 @@ import Section from './Section';
 import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
+import Blog from './Blog';
 
 
 const App = () => {
@@ -18,7 +19,8 @@ const App = () => {
     const sections = {
         "Projects": <Projects isLargeScreen={isLargeScreen} />,
         "About": <About />,
-        "Contact": <Contact />
+        "Contact": <Contact />,
+        "Blog": <Blog />,
     }
     const [section, setSection] = useState(sections[selected]);
 
