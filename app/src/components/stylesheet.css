@@ -44,6 +44,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--main-font-color);
 }
 
 .selected-marker {
@@ -203,8 +204,8 @@ button {
     text-align: center;
 }
 
-/* ProjectCards */
-.project-card {
+/* Projects */
+.card {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -365,6 +366,23 @@ button {
     margin-top: 10vh;
 }
 
+/* Blog */
+h1 a {
+    color: var(--main-font-color);
+}
+
+.blog .project-links {
+    display: none;
+}
+
+.blog .card {
+    padding-bottom: 2vh;
+}
+
+.blog .project-title {
+    font-size: 1.1em;
+}
+
 
 /* MEDIUM */
 @media (min-width: 450px) {
@@ -429,15 +447,6 @@ button {
         padding-left: 2vw;
     }
 
-    /* .header >
-    .section-nav >
-    .section-buttons >
-    .section-button-container >
-    button >
-    label {
-        letter-spacing: .3vw;
-    } */
-
     button {
         font-size: 1rem;
     }
@@ -463,8 +472,8 @@ button {
         margin: 5vh 0;
     }
 
-    /* ProjectCards */
-    .project-card {
+    /* Projects */
+    .card {
         justify-content: center;
         align-items: center;
     }
@@ -479,7 +488,7 @@ button {
         min-width: 100%;
     }
 
-    .project-card:hover {
+    .card:hover {
         border: 3px solid lightgray;
     }
 
@@ -512,8 +521,8 @@ button {
         max-width: 960px;
     }
 
-    /* ProjectCards */
-.project-card {
+    /* Projects */
+.card {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     margin-bottom: 3vh;

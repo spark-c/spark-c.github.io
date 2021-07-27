@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import ProjectCard from './ProjectCard';
 
 
-const Blog = ({ cache, updateCache }) => {
+const Blog = ({ cache, updateCache, isLargeScreen }) => {
 
     const [posts, setPosts] = useState(cache);
 
@@ -53,17 +54,34 @@ const Blog = ({ cache, updateCache }) => {
     const renderedPosts = posts?
         posts.map(post => {
             return(
-                <div key={post.title}>{post.title}</div>
+                <ProjectCard
+                    isLargeScreen={isLargeScreen}
+                    alignment={"left"}
+                    project={{
+                        "title": post.title,
+                        "host-url":
+                            `https://sparksnotes.hashnode.dev/${post.slug}`,
+                        "github-url": undefined,
+                        "img-src": post.coverImage,
+                        "desc": post.brief,
+                        "date": post.dateAdded,
+                    }} />
             );
         }):
         undefined
 
     return (
         <div className="section blog">
-            <h1 className="section-title">Check out Sparks' Notes!</h1>
+            <h1 className="section-title">
+                <a
+                href="https://sparksnotes.hashnode.dev">
+                        Check out<br/>
+                    <em>Sparks' Notes!</em>
+                </a>
+            </h1>
             <div className="blog-content">
                 <p>
-                    This is blog content!
+                    Here are my most recent blog posts...
                 </p>
                 <button onClick={sendRequest} value="REQUEST">REQUEST</button>
                 <div>
