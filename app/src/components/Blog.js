@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
-const Blog = () => {
+const Blog = ({ cache, updateCache }) => {
 
-    const [posts, setPosts] = useState(undefined);
+    const [posts, setPosts] = useState(cache);
+
+    useEffect(() => {
+        updateCache(posts);
+    }, [posts]);
     
     const query = `
     {

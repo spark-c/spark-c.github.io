@@ -16,11 +16,12 @@ const App = () => {
 
     const [drawHeader, setDrawHeader] = useState(false);
     const [selected, setSelected] = useState("Projects");
+    const [blogCache, setBlogCache] = useState(undefined);
     const sections = {
         "Projects": <Projects isLargeScreen={isLargeScreen} />,
         "About": <About />,
         "Contact": <Contact />,
-        "Blog": <Blog />,
+        "Blog": <Blog cache={blogCache} updateCache={setBlogCache}/>,
     }
     const [section, setSection] = useState(sections[selected]);
 
