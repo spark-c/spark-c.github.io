@@ -21,6 +21,7 @@ const Projects = ({ isLargeScreen }) => {
                 </div>
             ),
             "stack": "Python (discord.py, SQLAlchemy) | Postgres | Heroku",
+            "cta": "Live!",
         },
         "web-contact-converter": {
             "title": "web-contact-converter",
@@ -33,7 +34,8 @@ const Projects = ({ isLargeScreen }) => {
                     <p>Note: The app is served from a Heroku "free" dyno, and may take several seconds to load while it wakes up!</p>
                 </div>
             ),
-            "stack": "Python (Flask, SQLAlchemy) | JavaScript | Postgres | Heroku"
+            "stack": "Python (Flask, SQLAlchemy) | JavaScript | Postgres | Heroku",
+            "cta": "Live!",
         },
         "coffee-calculator": {
             "title": "coffee-calculator",
@@ -46,7 +48,8 @@ const Projects = ({ isLargeScreen }) => {
                     <p>There are several modes to account for the various common combinations of given/desired values to calculate. Soon including a setting for making iced coffee! Based on V60 paramters.</p>
                 </div>
             ),
-            "stack": "JavaScript (React)"
+            "stack": "JavaScript (React)",
+            "cta": "Live!",
         }
     }
 

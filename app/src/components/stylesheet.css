@@ -371,10 +371,6 @@ h1 a {
     color: var(--main-font-color);
 }
 
-.blog .project-links {
-    display: none;
-}
-
 .blog .card {
     padding-bottom: 2vh;
 }

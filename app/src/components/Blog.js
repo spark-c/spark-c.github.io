@@ -65,6 +65,7 @@ const Blog = ({ cache, updateCache, isLargeScreen }) => {
                         "img-src": post.coverImage,
                         "desc": post.brief,
                         "date": post.dateAdded,
+                        "cta": "Read more!",
                     }} />
             );
         }):
