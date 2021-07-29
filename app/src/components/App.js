@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import "./stylesheet.css";
 
+import "./stylesheet.css";
 import Nameblock from './Nameblock';
 import Header from './Header';
 import Section from './Section';
@@ -59,6 +59,9 @@ const App = () => {
 
             {isLargeScreen || drawHeader === true? renderedSection:undefined}
             {/* if on mobile and using Nameblock, DON'T draw a section! */}
+            <footer>
+                <div>{"Created by Collin Sparks with React :)"}</div>
+            </footer>
         </div>
     );
 };

@@ -17,6 +17,10 @@ body {
     overflow-x: hidden;
 }
 
+footer {
+    margin-bottom: 3vh;
+}
+
 .hidden {
     display: none;
 }
