@@ -9,6 +9,34 @@ const Contact = () => {
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
 
+    const sendMail = async () => {
+        const response = await fetch(
+            "https://sparksie-api.vercel.app/send_email",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                "sender_name": name,
+                "sender_email": email,
+                "subject": subject,
+                "body": message,
+            }) 
+        });
+        return response.json();
+    };
+
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+        const response = await sendMail();
+        console.log(response);
+
+        setMessage("");
+        setName("");
+        setEmail("");
+        setSubject("");
+    };
 
     return (
         <div className="section contact">
@@ -17,9 +45,7 @@ const Contact = () => {
             <div className="contact-content">
                 <form
                 className="contact-form"
-                action={`mailto:cklsparks@gmail.com?cc=${email}`}
-                enctype="text/plain"
-                target="_blank">
+                onSubmit={handleFormSubmit}>
                     <div className="short-fields">
                         <div className="name-input">
                             <label htmlFor="name-input">
@@ -75,7 +101,7 @@ const Contact = () => {
                     <input
                     id="contact-submit"
                     type="submit"
-                    value="Submit!">
+                    value="Send!">
                     </input>
                 </form>
             </div>
