@@ -7,7 +7,6 @@ import SectionNav from './SectionNav';
 const Nameblock = ({ selected, onSectionSelect }) => {
 
     const isLargeScreen = useMediaQuery('(min-width:450px)');
-    console.log(`isLargeScreen? ${isLargeScreen}`)
 
     return (
         <div className="nameblock">
