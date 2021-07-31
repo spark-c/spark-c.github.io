@@ -4,7 +4,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const Socials = () => {
 
-    const isLargeScreen = useMediaQuery('(min-width:450px)');
+    const isLargeScreen = useMediaQuery('(min-width:600px)');
 
     return (
         <div className="socials-container">

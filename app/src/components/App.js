@@ -12,7 +12,7 @@ import Blog from './Blog';
 
 
 const App = () => {
-    const isLargeScreen = useMediaQuery('(min-width:450px)');
+    const isLargeScreen = useMediaQuery('(min-width:515px)');
 
     const [drawHeader, setDrawHeader] = useState(false);
     const [selected, setSelected] = useState("Projects");
