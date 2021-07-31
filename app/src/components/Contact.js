@@ -9,6 +9,7 @@ const Contact = () => {
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
     const [sendStatus, setSendStatus] = useState(undefined);
+    const [loading, setLoading] = useState(false);
 
     const sendMail = async () => {
         const response = await fetch(
@@ -43,6 +44,8 @@ const Contact = () => {
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
+
         if (sendStatus) {
             setSendStatus(undefined);
         }
@@ -55,6 +58,7 @@ const Contact = () => {
             setEmail("");
             setSubject("");
         }
+        setLoading(false);
     };
 
     const renderedStatus = {"value": undefined}
@@ -75,6 +79,7 @@ const Contact = () => {
             break;
     }
 
+
     return (
         <div className="section contact">
             <h1 className="section-title">[contact-title-placeholder]</h1>
@@ -84,6 +89,18 @@ const Contact = () => {
                 <form
                 className="contact-form"
                 onSubmit={handleFormSubmit}>
+                    
+                    {loading?
+                        <p className="loading-message">Sending...</p>:
+                        undefined
+                    }
+                    {
+                    loading?
+                        <div className="loading">
+                        </div>:
+                        undefined
+                    }
+
                     <div className="short-fields">
                         <div className="name-input">
                             <label htmlFor="name-input">
