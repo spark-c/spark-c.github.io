@@ -11,7 +11,7 @@ const Projects = ({ isLargeScreen }) => {
     const projects = {
         'baby-bot': {
             "title": "SparksieBOT",
-            "host-url": undefined,
+            "host-url": true,
             "github-url": "https://github.com/spark-c/SparksieBOT",
             "img-src": sparksiebot_img,
             "desc": (

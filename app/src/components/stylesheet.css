@@ -538,6 +538,10 @@ h1 a {
         min-width: 100%;
     }
 
+    .project-host {
+        cursor: pointer;
+    }
+
     .card:hover {
         border: 3px solid lightgray;
     }

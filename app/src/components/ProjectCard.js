@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 const ProjectCard = ({ project, alignment, isLargeScreen }) => {
 
+    const [expanded, setExpanded] = useState(false);
 
     return (
         <div className={`card  ${alignment}`}>
@@ -33,13 +34,15 @@ const ProjectCard = ({ project, alignment, isLargeScreen }) => {
                         {project["host-url"]?
                         <a
                             className="project-host"
-                            href={project["host-url"]}>
+                            onClick={() => setExpanded(!expanded)}
+                            href={project["host-url"]}
+                            target="_blank">
                             {project["cta"]}
                         </a>:undefined}
                     </div>
                 </div>
             </div>
-            {project["embed"]? project["embed"]:undefined}
+            {project["embed"] && expanded? project["embed"]:undefined}
         </div>
     );
 };
