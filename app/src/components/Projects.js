@@ -1,4 +1,5 @@
-import React from 'react';
+import * as React from 'react';
+import WidgetBot from '@widgetbot/react-embed';
 
 import ProjectCard from './ProjectCard';
 import wcc_img from '../images/wcc.png';
@@ -22,6 +23,13 @@ const Projects = ({ isLargeScreen }) => {
             ),
             "stack": "Python (discord.py, SQLAlchemy) | Postgres | Heroku",
             "cta": "Live!",
+            "embed": (
+                <WidgetBot
+                    className="widgetbot"
+                    server="742418152280948857" // sparksie test server
+                    channel="871196944754696233" // sparksiebot-live-demo
+                />
+            ),
         },
         "web-contact-converter": {
             "title": "web-contact-converter",
@@ -36,6 +44,7 @@ const Projects = ({ isLargeScreen }) => {
             ),
             "stack": "Python (Flask, SQLAlchemy) | JavaScript | Postgres | Heroku",
             "cta": "Live!",
+            "embed": undefined,
         },
         "coffee-calculator": {
             "title": "coffee-calculator",
@@ -50,6 +59,7 @@ const Projects = ({ isLargeScreen }) => {
             ),
             "stack": "JavaScript (React)",
             "cta": "Live!",
+            "embed": undefined,
         }
     }
 

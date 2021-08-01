@@ -214,11 +214,19 @@ button {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-content: center;
     margin-bottom: 3vh;
     padding: 5px;
     border: 3px solid darkgray;
     border-radius: 2px;
+    
+}
+
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .project-info {
@@ -253,6 +261,12 @@ button {
     flex-direction: column;
     justify-content: center;
     margin: 0 2vw 0 2vw;
+}
+
+.widgetbot {
+    width: 100%;
+    min-height: 600px;
+    /* margin: 1vh 1vw; */
 }
 
 .item-margin {
@@ -509,7 +523,7 @@ h1 a {
     }
 
     /* Projects */
-    .card {
+    .project-wrapper {
         justify-content: center;
         align-items: center;
     }
@@ -567,12 +581,18 @@ h1 a {
 
     /* Projects */
 .card {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3vh;
     padding: 5px;
     border: 3px solid darkgray;
     border-radius: 2px;
+}
+
+.project-wrapper {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+
 }
 
 .project-info {
