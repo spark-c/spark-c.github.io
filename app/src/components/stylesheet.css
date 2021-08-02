@@ -1,11 +1,13 @@
 /* Mobile */
 :root {
     --main-background-color: black;
-    --main-font-color: #eaebd3;
+    --main-background-color: rgb(10, 10, 10);
+    --main-font-color: #ebe8d3;
+    --outline-color: rgb(65, 65, 65);
 }
 
 html {
-    font-size: 15px;
+    font-size: 16px;
     scroll-behavior: smooth;
 }
 
@@ -21,6 +23,19 @@ footer {
     display: none;
     margin-bottom: 3vh;
 }
+
+.construction *{
+    background-color: rgb(255, 196, 2);
+    color: black;
+    font-weight: 700;
+    padding: .2em 0;
+    text-align: center;
+}
+
+.construction a {
+    color: blue
+}
+
 
 .hidden {
     display: none;
@@ -65,7 +80,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    /* background-color: black; */
     font-size: 2em;
     /* font-family: 'Courier New', Courier, monospace; */
     font-family: 'Raleway', sans-serif;
@@ -121,8 +136,9 @@ a {
     letter-spacing: 3px;
 }
 
-.section-button-container {
-    font-size: 1rem;
+.section-button-container label{
+    font-size: 1.1rem;
+    color: var(--main-font-color);
 }
 
 .nameblock .section-buttons {
@@ -132,11 +148,14 @@ a {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    /* border: 2px solid green; */
 }
 
 .nameblock button {
     margin-bottom: 1em;
+}
+
+.nameblock .section-buttons label {
+    font-size: 1em;
 }
 
 /* Header */
@@ -175,12 +194,6 @@ a {
     width: 100%;
 }
 
-/* section {
-    height: 100vh;
-    width: 70vw;
-    padding: 8vh 0px 0px 15vw;
-} */
-
 button {
     border:none;
     background-color: transparent;
@@ -218,8 +231,10 @@ button {
     align-content: center;
     margin-bottom: 3vh;
     padding: 5px;
-    border: 3px solid darkgray;
+    /* border: 3px solid rgb(65, 65, 65); */
+    border: 3px double var(--outline-color);
     border-radius: 2px;
+    background-color: var(--main-background-color);
     
 }
 
@@ -297,7 +312,7 @@ button {
     display: flex;
     justify-content: space-evenly;
     padding: 3vh;
-    border: 1px solid var(--main-font-color);
+    border: 1px solid var(--outline-color);
     margin-bottom: 1em;
 }
 
@@ -376,6 +391,8 @@ button {
     border: none;
     font-size: 1.1em;
     height: 1.5em;
+    background-color: rgb(29, 29, 29);
+    color: var(--main-font-color);
 }
 
 .name-input, .email-input {
@@ -395,8 +412,22 @@ button {
     width: 60%;
     height: 2.5em;
     align-self: center;
-    font-size: 1rem;
     margin-bottom: 10vh;
+    background-color: var(--main-background-color);
+    border: 2px solid var(--outline-color);
+    color: var(--main-font-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-submit:hover {
+    background-color: var(--outline-color);
+    border: 2px solid var(--main-background-color);
+}
+
+#contact-submit:active {
+    background-color: var(--outline-color);
+    border: 2px solid var(--main-background-color);
 }
 
 .red {
@@ -433,6 +464,10 @@ h1 a {
 
 /* MEDIUM */
 @media (min-width: 515px) {
+    html {
+        font-size: 18px;
+    }
+
     .content {
         font-family: 'Open Sans', sans-serif;
         min-width: 50vw;
@@ -443,6 +478,10 @@ h1 a {
     .selected-marker {
         font-size: 1.3rem;
         display: flex;
+    }
+
+    .construction {
+        margin-top: 1vh;
     }
 
     /* Nameblock */
@@ -473,7 +512,7 @@ h1 a {
     /* Header */
     .header {
         display: grid;
-        grid-template-columns: 5vw 1.5fr 1fr 1fr 10vw;
+        grid-template-columns: 5vw 1.2fr 1fr 1fr 5vw;
     }
 
     .header > .name {
@@ -485,9 +524,13 @@ h1 a {
     .header > .section-nav {
         grid-column: 3 / 5;
         display: flex;
-        align-items: center;
+        align-items: space-between;
         padding-top: 6%;
         padding-left: 2vw;
+    }
+
+    .header * label {
+        font-size: .9rem;
     }
 
     button {
@@ -495,7 +538,7 @@ h1 a {
     }
 
     button > label {
-        letter-spacing: .2rem;
+        letter-spacing: .1rem;
     }
 
     button:hover {
@@ -542,9 +585,9 @@ h1 a {
         cursor: pointer;
     }
 
-    .card:hover {
-        border: 3px solid lightgray;
-    }
+    /* .card:hover {
+        border: 5px double rgb(51, 51, 51);
+    } */
 
     /* Contact */
     .short-fields {
@@ -565,6 +608,10 @@ h1 a {
     #contact-submit {
         max-width: 200px;
         font-size: .8rem;
+    }
+
+    #contact-submit:active {
+        border: 2px solid var(--main-font-color);
     }
 }
 
@@ -589,7 +636,7 @@ h1 a {
     flex-direction: column;
     margin-bottom: 3vh;
     padding: 5px;
-    border: 3px solid darkgray;
+    border: 5px double var(--outline-color);
     border-radius: 2px;
 }
 
