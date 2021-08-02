@@ -9,6 +9,10 @@ const Blog = ({ cache, updateCache, isLargeScreen }) => {
     useEffect(() => {
         updateCache(posts);
     }, [posts]);
+
+    useEffect(() => {
+        sendRequest();
+    }, []);
     
     const query = `
     {
@@ -26,8 +30,8 @@ const Blog = ({ cache, updateCache, isLargeScreen }) => {
       }
     `
 
-    const sendRequest = (e) => {
-        e.preventDefault();
+    const sendRequest = () => {
+        // e.preventDefault();
 
         async function handleResponse() {
             const data = await fetch('https://api.hashnode.com/', {
@@ -76,15 +80,12 @@ const Blog = ({ cache, updateCache, isLargeScreen }) => {
             <h1 className="section-title">
                 <a
                 href="https://sparksnotes.hashnode.dev">
-                        Check out<br/>
-                    <em>Sparks' Notes!</em>
-                </a>
+                        [ Check out&nbsp;
+                    <em className="link-hover">Sparks' Notes!</em>
+                </a> ]
             </h1>
             <div className="blog-content">
-                <p>
-                    Here are my most recent blog posts...
-                </p>
-                <button onClick={sendRequest} value="REQUEST">REQUEST</button>
+                {/* <button onClick={sendRequest} value="REQUEST">REQUEST</button> */}
                 <div>
                     {renderedPosts}
                 </div>

@@ -50,6 +50,10 @@ footer {
     font-style: italic;
 }
 
+.link-hover:hover {
+    color: lightskyblue;
+}
+
 .content {
     font-family: 'Open Sans', sans-serif;
     min-width: 80vw;
@@ -403,6 +407,11 @@ button {
 #message-input {
     height: 15em;
     border: none;
+}
+
+.contact-cc {
+    margin: 0;
+    text-align: center;
 }
 
 #contact-submit {

@@ -26,7 +26,7 @@ const ProjectCard = ({ project, showDetails, isLargeScreen }) => {
                     <div className="project-links">
                         {project["writeup"]?
                         <div
-                            className="show-writeup pointer"
+                            className="show-writeup link-hover pointer"
                             onClick={() => {
                                 showDetails(true, project["title"])
                             }}>
@@ -34,7 +34,7 @@ const ProjectCard = ({ project, showDetails, isLargeScreen }) => {
                         </div>:undefined}
                         {project["host-url"]?
                         <a
-                            className="project-host pointer"
+                            className="project-host link-hover pointer"
                             onClick={() => setExpanded(!expanded)}
                             href={project["host-url"]}
                             target="_blank">
@@ -42,7 +42,7 @@ const ProjectCard = ({ project, showDetails, isLargeScreen }) => {
                         </a>:undefined}
                         {project["github-url"]?
                         <a
-                            className="project-github"
+                            className="project-github link-hover "
                             href={project["github-url"]}>
                             GitHub
                         </a>:undefined}

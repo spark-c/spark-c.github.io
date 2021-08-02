@@ -12,7 +12,7 @@ const About = () => {
             onMouseEnter={() => setShowImg(true)}
             onMouseLeave={() => setShowImg(false)}
             onClick={() => setShowImg(!showImg)}>
-                Hello there!
+                [ Hello there! ]
             </h1>
             {
                 showImg?

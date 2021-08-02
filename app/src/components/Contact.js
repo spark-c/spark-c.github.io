@@ -82,7 +82,7 @@ const Contact = () => {
 
     return (
         <div className="section contact">
-            <h1 className="section-title">[contact-title-placeholder]</h1>
+            <h1 className="section-title">[ Send an email below! ]</h1>
             <Socials />
             {renderedStatus.value}
             <div className="contact-content">
@@ -104,7 +104,7 @@ const Contact = () => {
                     <div className="short-fields">
                         <div className="name-input">
                             <label htmlFor="name-input">
-                                Name<span className="red">*</span>
+                                Your Name<span className="red">*</span>
                             </label>
                             <input
                                 className="input short"
@@ -117,7 +117,7 @@ const Contact = () => {
 
                         <div className="email-input">
                             <label htmlFor="email-input">
-                                Email<span className="red">*</span>
+                                Your Email<span className="red">*</span>
                             </label>
                             <input
                             className="input short"
@@ -131,7 +131,7 @@ const Contact = () => {
                     </div>
 
                     <label htmlFor="subject-input">
-                        Subject<span className="red">*</span>
+                        Subject Line<span className="red">*</span>
                     </label>
                     <input
                     className="input"
@@ -143,7 +143,7 @@ const Contact = () => {
                     </input>
                     
                     <label htmlFor="message-input">
-                        Message<span className="red">*</span>
+                        Message Body<span className="red">*</span>
                     </label>
                     <textarea
                     className="input"
@@ -152,6 +152,10 @@ const Contact = () => {
                     value={message}
                     onChange={e => setMessage(e.target.value)}>
                     </textarea>
+
+                    <p className="contact-cc">
+                        Note: You will be cc'd on the email :)
+                    </p>
 
                     <input
                     id="contact-submit"

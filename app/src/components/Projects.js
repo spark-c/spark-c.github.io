@@ -38,7 +38,7 @@ const Projects = ({ isLargeScreen }) => {
 
     return (
         <div className=" section projects">
-            <h1 className="section-title">_ These are projects! :) _</h1>
+            <h1 className="section-title">[ Here's some of my work! ]</h1>
             {renderedComponents} {/* either all projects or one writeup */}
         </div>
     );
