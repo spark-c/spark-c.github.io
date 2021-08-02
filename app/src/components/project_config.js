@@ -4,9 +4,11 @@ import WidgetBot from '@widgetbot/react-embed';
 import wcc_img from '../images/wcc.png';
 import sparksiebot_img from '../images/sparksiebot.png';
 
+import sparksiebot_writeup from './writeups/SparksieBOT.js';
+
 
 const project_details = {
-    'baby-bot': {
+    'SparksieBOT': {
         "title": "SparksieBOT",
         "host-url": true,
         "github-url": "https://github.com/spark-c/SparksieBOT",
@@ -27,6 +29,7 @@ const project_details = {
                 channel="871196944754696233" // sparksiebot-live-demo
             />
         ),
+        "writeup": sparksiebot_writeup,
     },
     "web-contact-converter": {
         "title": "web-contact-converter",
@@ -42,6 +45,7 @@ const project_details = {
         "stack": "Python (Flask, SQLAlchemy) | JavaScript | Postgres | Heroku",
         "cta": "Live!",
         "embed": undefined,
+        "writeup": undefined,
     },
     "coffee-calculator": {
         "title": "coffee-calculator",
@@ -57,6 +61,7 @@ const project_details = {
         "stack": "JavaScript (React)",
         "cta": "Live!",
         "embed": undefined,
+        "writeup": undefined,
     }
 }
 

@@ -1,18 +1,45 @@
 import React, { useState } from 'react';
 
 import ProjectCard from './ProjectCard';
+import ProjectWriteup from './ProjectWriteup';
 import projects from './project_config';
 
 
 const Projects = ({ isLargeScreen }) => {
+    const [showDetails, setShowDetails] = useState(false);
+    const [selectedProject, setSelectedProject] = useState(undefined);
+
+    const handleSelection = (boolean, project_label) => {
+        setShowDetails(boolean);
+        setSelectedProject(project_label)
+    };
+
+    const projectsToShow = [
+        projects["SparksieBOT"],
+        projects["web-contact-converter"],
+        projects["coffee-calculator"],
+    ];
+
+    const renderedComponents = (
+        showDetails?
+            <ProjectWriteup
+                project={projects[selectedProject]}
+                showDetails={handleSelection} />:
+            projectsToShow.map(project => {
+                return (
+                    <ProjectCard
+                        project={project}
+                        showDetails={handleSelection}
+                        isLargeScreen={isLargeScreen}/>
+                );
+            })
+    );
 
 
     return (
         <div className=" section projects">
             <h1 className="section-title">_ These are projects! :) _</h1>
-            <ProjectCard project={projects["baby-bot"]} alignment="left" isLargeScreen={isLargeScreen}/>
-            <ProjectCard project={projects["web-contact-converter"]} alignment="right" isLargeScreen={isLargeScreen}/>
-            <ProjectCard project={projects["coffee-calculator"]} alignment="left" isLargeScreen={isLargeScreen}/>
+            {renderedComponents} {/* either all projects or one writeup */}
         </div>
     );
 };

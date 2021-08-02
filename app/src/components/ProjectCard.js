@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 
-const ProjectCard = ({ project, alignment, isLargeScreen }) => {
+const ProjectCard = ({ project, showDetails, isLargeScreen }) => {
 
     const [expanded, setExpanded] = useState(false);
 
     return (
-        <div className={`card  ${alignment}`}>
+        <div className="card">
             <div className="project-wrapper">
                 <div className="img-container">
                     <img className="project-img" src={project["img-src"]} />
@@ -24,6 +24,22 @@ const ProjectCard = ({ project, alignment, isLargeScreen }) => {
                         </div>
                     </div>
                     <div className="project-links">
+                        {project["writeup"]?
+                        <div
+                            className="show-writeup pointer"
+                            onClick={() => {
+                                showDetails(true, project["title"])
+                            }}>
+                            Details
+                        </div>:undefined}
+                        {project["host-url"]?
+                        <a
+                            className="project-host pointer"
+                            onClick={() => setExpanded(!expanded)}
+                            href={project["host-url"]}
+                            target="_blank">
+                            {project["cta"]}
+                        </a>:undefined}
                         {project["github-url"]?
                         <a
                             className="project-github"
@@ -31,14 +47,6 @@ const ProjectCard = ({ project, alignment, isLargeScreen }) => {
                             GitHub
                         </a>:undefined}
 
-                        {project["host-url"]?
-                        <a
-                            className="project-host"
-                            onClick={() => setExpanded(!expanded)}
-                            href={project["host-url"]}
-                            target="_blank">
-                            {project["cta"]}
-                        </a>:undefined}
                     </div>
                 </div>
             </div>
