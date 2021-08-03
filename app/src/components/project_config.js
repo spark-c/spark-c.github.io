@@ -10,7 +10,7 @@ import sparksiebot_writeup from './writeups/SparksieBOT.js';
 const project_details = {
     'SparksieBOT': {
         "title": "SparksieBOT",
-        "host-url": true,
+        "host-url": undefined,
         "github-url": "https://github.com/spark-c/SparksieBOT",
         "img-src": sparksiebot_img,
         "desc": (

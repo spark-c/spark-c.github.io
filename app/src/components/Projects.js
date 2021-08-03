@@ -30,7 +30,8 @@ const Projects = ({ isLargeScreen }) => {
                     <ProjectCard
                         project={project}
                         showDetails={handleSelection}
-                        isLargeScreen={isLargeScreen}/>
+                        isLargeScreen={isLargeScreen}
+                        key={project["title"]}/>
                 );
             })
     );
