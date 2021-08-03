@@ -17,7 +17,7 @@ const project_details = {
             <div>
                 <p>This bot is created and maintained to provide commands for utility and entertainment on my personal Discord server!</p>
                 <p>The project goes varying periods of light maintainance, heavy development for additional functionality, and occasional upkeep work to refactor old code to meet my improving code-quality standards.</p>
-                <p className="cta">Click the "Live!" link to say hi and interact with SparksieBot!</p>
+                <p>You can click the "Live!" link to interact with SparksieBOT; commands found in the GitHub Readme (TODO: put them here!)</p>
             </div>
         ),
         "stack": "Python (discord.py, SQLAlchemy) | Postgres | Heroku",
@@ -29,7 +29,7 @@ const project_details = {
                 channel="871196944754696233" // sparksiebot-live-demo
             />
         ),
-        "writeup": sparksiebot_writeup,
+        "writeup": undefined,
     },
     "web-contact-converter": {
         "title": "web-contact-converter",

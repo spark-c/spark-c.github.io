@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const writeup = (
-    <div>SparksieBOT is a project and this is the writeup!</div>
+    <div>OOPS! Sorry, I still need to write this content!</div>
 );
 
 export default writeup;
