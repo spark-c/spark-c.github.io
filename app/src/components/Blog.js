@@ -70,7 +70,8 @@ const Blog = ({ cache, updateCache, isLargeScreen }) => {
                         "desc": post.brief,
                         "date": post.dateAdded,
                         "cta": "Read more!",
-                    }} />
+                    }}
+                    key={post.slug} />
             );
         }):
         undefined
