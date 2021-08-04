@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import about_content from './about_content.js';
 import grievous from '../images/grievous.png';
 
 
@@ -19,16 +20,11 @@ const About = () => {
                 <img
                     className="grievous"
                     src={grievous}
-                    alt="Star Wars' General Grievous saying 'General Kenobi!"
+                    alt="Star Wars' General Grievous saying 'General Kenobi!'"
                 />:
                 undefined
             }
-            <div className="about-content">
-                <p>
-                    Hiya! I am having a great time working with Python and JavaScript and whatever other techs I come across end up needing to learn in order to do my thing.
-                </p>
-                
-            </div>
+            {about_content}
         </div>
     );
 };
