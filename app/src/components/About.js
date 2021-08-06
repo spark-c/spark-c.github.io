@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-import about_content from './about_content.js';
+import Accordion from './Accordion';
+import { about_content, accordionConfig } from './about_content.js';
 import grievous from '../images/grievous.png';
 
 
@@ -24,6 +25,7 @@ const About = () => {
                 />:
                 undefined
             }
+            <Accordion config={accordionConfig} />
             {about_content}
         </div>
     );

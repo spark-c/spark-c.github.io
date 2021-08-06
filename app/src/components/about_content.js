@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const about_content = (
+export const about_content = (
     <div className="about-content">
         <p>
             My name is Collin Sparks -- some people have also taken to calling me "Sparkles", which is fine too!
@@ -16,7 +16,7 @@ const about_content = (
        
         {/* Do I like learning? */}
         <p> 
-            My mom and I always joked that I would end up being a "forever-student" that went to college and just... kept going. I loved learning all sorts of things! Suffice to say: <span className="italic">THANK GOODNESS</span> that I've found programming! Or else, I'd either be bored out of my mind or drowning in more tuition payments...
+            My mom and I always joked that I would end up being a "forever-student" that went to college and just... kept going. I loved learning all sorts of things! For me, one of the biggest upsides of learning to code was the fact that I'l always have more pathways for learning and trying new things.
         </p>
 
         {/* How did I start programming? */}
@@ -41,4 +41,13 @@ const about_content = (
     </div>
 );
 
-export default about_content;
+export const accordionConfig = [
+    {
+        label: "Item 1",
+        content: "This is item 1's content!",
+    },
+    {
+        label: "Item 2",
+        content: "This is the content for item number two!",
+    },
+]
