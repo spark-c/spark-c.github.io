@@ -4,9 +4,15 @@ import React, { useState } from 'react';
 const ProjectCard = ({ project, showDetails, isLargeScreen }) => {
 
     const [expanded, setExpanded] = useState(false);
+    const [color, setColor] = useState("");
+    const updateColor = () => {
+        setColor(`c${Math.floor(Math.random()*6).toString()}`);
+    };
 
     return (
-        <div className="card">
+        <div className={`card ${color}`}
+            onMouseEnter={updateColor}
+            onMouseLeave={() => setColor("")}>
             <div className="project-wrapper">
                 <div className="img-container">
                     <img className="project-img" src={project["img-src"]} />
