@@ -10,6 +10,11 @@ export const about_content = (
             In short, I love solving problems and doing things that are useful to someone. <span className="italic">Doubly</span> so when the solution involves cool technology!
         </p>
         <p>
+            I started learning to code in 2018, when my mom had some wildly tedious recurring computer work to do for her job. I figured, "Surely there must be some better way..." Unsurprisingly, there was!
+        </p>
+        <br/>
+        
+        <p>
             One of the most attractive things to me about code is that it <span className="italic">enables me to create</span>. I've sculpted, drawn, painted, built, choreographed, etc... but so far, code has been the media which helps me feel the most empowered and able to really MAKE things!
         </p>
         <p> 
