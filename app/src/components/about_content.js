@@ -9,6 +9,36 @@ export const about_content = (
         <p>
             In short, I love solving problems and doing things that are useful to someone. <span className="italic">Doubly</span> so when the solution involves cool technology!
         </p>
+        <p>
+            One of the most attractive things to me about code is that it <span className="italic">enables me to create</span>. I've sculpted, drawn, painted, built, choreographed, etc... but so far, code has been the media which helps me feel the most empowered and able to really MAKE things!
+        </p>
+        <p> 
+            On that note, I do have a huge love for art in general -- especially the performing arts. Big time. 
+        </p>
+        <br/>
+        <hr/>
+        <h2>Arts, you say?</h2>
+        <p>Yep!</p>
+        <p>
+            Growing up in Ohio, I spent about 8 years dancing and peforming in a dance academy / company called BalletMet. It was awesome. Ballet is at the intersection of "incredibly artistic" and "wildly technical", and completely shaped my life experience as I was growing up.
+        </p>
+        <p>
+            And then in college, I got really into theatre! I was both a dancer and an actor for a while, but ended up getting very interested in Lighting Design as well. I've designed / implemented / programmed lights for a bunch of shows now, both in and out of school.
+        </p>
+
+    </div>
+);
+
+
+
+export const about_content_wip = (
+    <div className="about-content">
+        <p>
+            My name is Collin Sparks -- some people have also taken to calling me "Sparkles", which is fine too!
+        </p>
+        <p>
+            In short, I love solving problems and doing things that are useful to someone. <span className="italic">Doubly</span> so when the solution involves cool technology!
+        </p>
 
 
         {/* ACCORDION */}

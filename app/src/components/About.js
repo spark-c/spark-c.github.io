@@ -25,7 +25,7 @@ const About = () => {
                 />:
                 undefined
             }
-            <Accordion config={accordionConfig} />
+            {/* <Accordion config={accordionConfig} /> */}
             {about_content}
         </div>
     );
