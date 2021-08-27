@@ -34,9 +34,15 @@ const App = () => {
         if (isLargeScreen === false) {
             setDrawHeader(true);
         };
+        let scrollTarget = isLargeScreen?
+            document.querySelector(".instructions"):
+            document.querySelector("body");
+
         setSelected(label);
         setSection(sections[label]);
-        
+        if (scrollTarget) {
+            scrollTarget.scrollIntoView(true);
+        };
     };
 
     const renderedSection = (
