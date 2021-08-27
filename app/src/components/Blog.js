@@ -88,7 +88,7 @@ const Blog = ({ cache, updateCache, isLargeScreen }) => {
             <div className="blog-content">
                 {/* <button onClick={sendRequest} value="REQUEST">REQUEST</button> */}
                 <div>
-                    {renderedPosts}
+                    {renderedPosts? renderedPosts:<h2>Loading...</h2>}
                 </div>
             </div>
         </div>
