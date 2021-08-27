@@ -16,6 +16,7 @@ const Nameblock = ({ selected, onSectionSelect }) => {
                     <div className="name lastname">Sparks</div>
                 </h1>
                 <div className="blurb">Software Engineer</div>
+                <div className="stack">Python | JavaScript / React</div>
                 {/* <div className="bordertext">This is test to test is test to test is test to test is test to test is test to test!</div> */}
             </div>
             <SectionNav
