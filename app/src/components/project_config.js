@@ -67,12 +67,24 @@ export const projects = {
 
 export const oss = {
     "hubspot": {
-        "title": "hubspot",
+        "title": "hubspot-api-python",
+        "description": 
+            "HubSpot's Python wrapper for their product's Auth and CRM APIs. This PR located, fixed, and tested broken links to the HubSpot API documentation in one of their sample app’s README files.",
+        "repo_url": "https://github.com/HubSpot/hubspot-api-python/",
+        "pr_url": "https://github.com/HubSpot/hubspot-api-python/pull/53",
     },
     "chipy": {
-        "title": "chipy",
+        "title": "chipy.org",
+        "description":
+            "This is the Chicago Python user group (ChiPy) main Django website codebase. This PR updated the referral terms on group's job board page.",
+        "repo_url": "https://github.com/chicagopython/chipy.org",
+        "pr_url": "https://github.com/chicagopython/chipy.org/pull/397",
     },
     "gh_changelog" : {
-        "title": "gh_changelog",
+        "title": "github-changelog-generator",
+        "description":
+            "This Ruby CLI tool automatically generates change-logs from tags, issues, labels and PRs on GitHub. This PR updated the project's help, docstrings, and documentation pages to accurately reflect whether each command's arguments were optional or required.",
+        "repo_url": "https://github.com/github-changelog-generator/github-changelog-generator/",
+        "pr_url": "https://github.com/github-changelog-generator/github-changelog-generator/pull/946",
     },
 };

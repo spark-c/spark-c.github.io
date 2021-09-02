@@ -255,6 +255,10 @@ button {
 }
 
 /* Projects */
+.projects {
+    padding-bottom: 5vh;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -323,6 +327,12 @@ button {
     padding: 1vh 0 1vh 0;
     display: flex;
     justify-content: space-evenly;
+}
+
+.oss-entry {
+    border-left: 3px solid var(--outline-color);
+    padding-left: 2vw;
+    margin-bottom: 5vh;
 }
 
 /* About */
@@ -624,27 +634,27 @@ h1 a {
     }
 
     /* Projects */
-    .card.c0 {
+    .card.c0, .oss-entry.c0 {
         border-color: var(--accent0);
     }
     
-    .card.c1 {
+    .card.c1, .oss-entry.c1 {
         border-color: var(--accent1);
     }
     
-    .card.c2 {
+    .card.c2, .oss-entry.c2 {
         border-color: var(--accent2);
     }
     
-    .card.c3 {
+    .card.c3, .oss-entry.c3 {
         border-color: var(--accent3);
     }
     
-    .card.c4 {
+    .card.c4, .oss-entry.c4 {
         border-color: var(--accent4);
     }
     
-    .card.c5 {
+    .card.c5, .oss-entry.c5 {
         border-color: var(--accent5);
     }
 

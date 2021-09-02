@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 
 import ProjectCard from './ProjectCard';
 import ProjectWriteup from './ProjectWriteup';
+import OssEntry from './OssEntry';
 import {projects, oss} from './project_config';
 
 
 const Projects = ({ isLargeScreen }) => {
     const [showDetails, setShowDetails] = useState(false);
     const [selectedProject, setSelectedProject] = useState(undefined);
+
 
     const handleSelection = (boolean, project_label) => {
         setShowDetails(boolean);
@@ -21,9 +23,9 @@ const Projects = ({ isLargeScreen }) => {
     ];
 
     const ossToShow = [
+        oss["gh_changelog"],
         oss["hubspot"],
         oss["chipy"],
-        oss["gh_changelog"],
     ];
 
     const renderedProjects = showDetails?
@@ -47,16 +49,16 @@ const Projects = ({ isLargeScreen }) => {
             undefined:
             <div>
                 <h2>OSS Contributions</h2>
-                {ossToShow.map(project => {
-                    return (
-                        <div>{project["title"]}</div>
-                    );
-                })}
-            </div>;
+                    {ossToShow.map(project => {
+                        return (
+                            <OssEntry project={project} />
+                        );
+                    })}
+                </div>;
 
 
     return (
-        <div className=" section projects">
+        <div className="section projects">
             <h1 className="section-title">[ Here's some of my work! ]</h1>
 
             {renderedProjects} {/* either all items, or one writeup */}
