@@ -7,7 +7,7 @@ import sparksiebot_img from '../images/sparksiebot.png';
 import sparksiebot_writeup from './writeups/SparksieBOT.js';
 
 
-const project_details = {
+export const projects = {
     'SparksieBOT': {
         "title": "SparksieBOT",
         "host-url": undefined,
@@ -62,7 +62,17 @@ const project_details = {
         "cta": "Live!",
         "embed": undefined,
         "writeup": undefined,
-    }
+    },
 }
 
-export default project_details;
+export const oss = {
+    "hubspot": {
+        "title": "hubspot",
+    },
+    "chipy": {
+        "title": "chipy",
+    },
+    "gh_changelog" : {
+        "title": "gh_changelog",
+    },
+};

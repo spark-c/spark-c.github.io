@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import ProjectCard from './ProjectCard';
 import ProjectWriteup from './ProjectWriteup';
-import projects from './project_config';
+import {projects, oss} from './project_config';
 
 
 const Projects = ({ isLargeScreen }) => {
@@ -20,27 +20,48 @@ const Projects = ({ isLargeScreen }) => {
         projects["coffee-calculator"],
     ];
 
-    const renderedComponents = (
-        showDetails?
+    const ossToShow = [
+        oss["hubspot"],
+        oss["chipy"],
+        oss["gh_changelog"],
+    ];
+
+    const renderedProjects = showDetails?
             <ProjectWriteup
                 project={projects[selectedProject]}
                 showDetails={handleSelection} />:
-            projectsToShow.map(project => {
-                return (
-                    <ProjectCard
-                        project={project}
-                        showDetails={handleSelection}
-                        isLargeScreen={isLargeScreen}
-                        key={project["title"]}/>
-                );
-            })
-    );
+            <div>
+                <h2>Projects</h2>
+                {projectsToShow.map(project => {
+                    return (
+                        <ProjectCard
+                            project={project}
+                            showDetails={handleSelection}
+                            isLargeScreen={isLargeScreen}
+                            key={project["title"]}/>
+                    );
+                })}
+            </div>
+
+    const renderedOSS = showDetails?
+            undefined:
+            <div>
+                <h2>OSS Contributions</h2>
+                {ossToShow.map(project => {
+                    return (
+                        <div>{project["title"]}</div>
+                    );
+                })}
+            </div>;
 
 
     return (
         <div className=" section projects">
             <h1 className="section-title">[ Here's some of my work! ]</h1>
-            {renderedComponents} {/* either all projects or one writeup */}
+
+            {renderedProjects} {/* either all items, or one writeup */}
+            {renderedOSS}       {/* depending on value of showDetails */}
+            
         </div>
     );
 };
