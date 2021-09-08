@@ -90,6 +90,11 @@ footer {
     font-style: italic;
 }
 
+.strike {
+    text-decoration: line-through;
+    text-decoration-thickness: 8%;
+}
+
 .link-hover:hover {
     color: lightskyblue;
 }

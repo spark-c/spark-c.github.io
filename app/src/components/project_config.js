@@ -18,7 +18,7 @@ export const projects = {
             <div>
                 <p>This bot is created and maintained to provide commands for utility and entertainment on my personal Discord server!</p>
                 <p>The project goes varying periods of light maintainance, heavy development for additional functionality, and occasional upkeep work to refactor old code to meet my improving code-quality standards.</p>
-                <p>You can click the "Live!" link to interact with SparksieBOT; commands found in the GitHub Readme (Coming soon: !demo command)</p>
+                <p><span className="strike">You can click the "Live!" link to interact with SparksieBOT</span> Oops! SparksieBOT is currently ignoring commands sent from this page :(</p>
             </div>
         ),
         "stack": "Python (discord.py, SQLAlchemy) | Postgres | Heroku",
