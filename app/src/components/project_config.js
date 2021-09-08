@@ -3,6 +3,7 @@ import WidgetBot from '@widgetbot/react-embed';
 
 import wcc_img from '../images/wcc.png';
 import sparksiebot_img from '../images/sparksiebot.png';
+import coffee_img from '../images/coffee-calc.png';
 
 import sparksiebot_writeup from './writeups/SparksieBOT.js';
 
@@ -51,7 +52,7 @@ export const projects = {
         "title": "coffee-calculator",
         "host-url": undefined,
         "github-url": "https://github.com/spark-c/coffee-calculator",
-        "img-src": "https://via.placeholder.com/50.png",
+        "img-src": coffee_img,
         "desc": (
             <div>
                 <p>A small web app used for calculating the necessary variables of a pour-over coffee recipe.</p>
