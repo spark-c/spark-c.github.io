@@ -50,7 +50,7 @@ export const projects = {
     },
     "coffee-calculator": {
         "title": "coffee-calculator",
-        "host-url": undefined,
+        "host-url": "https://coffee-calculator-nine.vercel.app",
         "github-url": "https://github.com/spark-c/coffee-calculator",
         "img-src": coffee_img,
         "desc": (
@@ -59,7 +59,7 @@ export const projects = {
                 <p>There are several modes to account for the various common combinations of given/desired values to calculate. Soon including a setting for making iced coffee! Based on V60 paramters.</p>
             </div>
         ),
-        "stack": "JavaScript (React)",
+        "stack": "JavaScript (React) | Vercel",
         "cta": "Live!",
         "embed": undefined,
         "writeup": undefined,
