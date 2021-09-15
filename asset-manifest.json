@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.99610dae.chunk.css",
-    "main.js": "/static/js/main.aa8cd79f.chunk.js",
-    "main.js.map": "/static/js/main.aa8cd79f.chunk.js.map",
+    "main.css": "/static/css/main.807627f6.chunk.css",
+    "main.js": "/static/js/main.1cf01cd0.chunk.js",
+    "main.js.map": "/static/js/main.1cf01cd0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.be265e1d.js",
     "runtime-main.js.map": "/static/js/runtime-main.be265e1d.js.map",
     "static/js/2.7bc88288.chunk.js": "/static/js/2.7bc88288.chunk.js",
     "static/js/2.7bc88288.chunk.js.map": "/static/js/2.7bc88288.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.99610dae.chunk.css.map": "/static/css/main.99610dae.chunk.css.map",
+    "static/css/main.807627f6.chunk.css.map": "/static/css/main.807627f6.chunk.css.map",
     "static/js/2.7bc88288.chunk.js.LICENSE.txt": "/static/js/2.7bc88288.chunk.js.LICENSE.txt",
     "static/media/coffee-calc.8ad747d6.png": "/static/media/coffee-calc.8ad747d6.png",
     "static/media/grievous.8ae934ef.png": "/static/media/grievous.8ae934ef.png",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.be265e1d.js",
     "static/js/2.7bc88288.chunk.js",
-    "static/css/main.99610dae.chunk.css",
-    "static/js/main.aa8cd79f.chunk.js"
+    "static/css/main.807627f6.chunk.css",
+    "static/js/main.1cf01cd0.chunk.js"
   ]
 }
