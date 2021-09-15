@@ -30,7 +30,8 @@ export const projects = {
                 channel="871196944754696233" // sparksiebot-live-demo
             />
         ),
-        "writeup": sparksiebot_writeup,
+        "writeup": undefined,
+        // "writeup": sparksiebot_writeup,
     },
     "web-contact-converter": {
         "title": "web-contact-converter",
