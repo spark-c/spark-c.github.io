@@ -67,19 +67,19 @@ export const projects = {
 }
 
 export const oss = {
+    "chipy": {
+        "title": "chipy.org",
+        "description":
+            "This is the Chicago Python user group (ChiPy) main Django website codebase. This PR updates how contact form success feedback is presented to the user; replaces old alert-msg behavior with a new modal instead. (WIP)",
+        "repo_url": "https://github.com/chicagopython/chipy.org",
+        "pr_url": "https://github.com/chicagopython/chipy.org/pull/422",
+    },
     "hubspot": {
         "title": "hubspot-api-python",
         "description": 
             "HubSpot's Python wrapper for their product's Auth and CRM APIs. This PR located, fixed, and tested broken links to the HubSpot API documentation in one of their sample app’s README files.",
         "repo_url": "https://github.com/HubSpot/hubspot-api-python/",
         "pr_url": "https://github.com/HubSpot/hubspot-api-python/pull/53",
-    },
-    "chipy": {
-        "title": "chipy.org",
-        "description":
-            "This is the Chicago Python user group (ChiPy) main Django website codebase. This PR updates how contact form success feedback is presented to the user; replaces old alert-msg behavior with a new modal instead.",
-        "repo_url": "https://github.com/chicagopython/chipy.org",
-        "pr_url": "https://github.com/chicagopython/chipy.org/pull/422",
     },
     "gh_changelog" : {
         "title": "github-changelog-generator",
