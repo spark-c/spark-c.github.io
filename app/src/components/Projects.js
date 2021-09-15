@@ -59,7 +59,9 @@ const Projects = ({ isLargeScreen }) => {
 
     return (
         <div className="section projects">
-            <h1 className="section-title">[ Here's some of my work! ]</h1>
+            {showDetails?
+                undefined:
+                <h1 className="section-title">[ Here's some of my work! ]</h1>}
 
             {renderedProjects} {/* either all items, or one writeup */}
             {renderedOSS}       {/* depending on value of showDetails */}
