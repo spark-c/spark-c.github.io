@@ -30,7 +30,7 @@ export const projects = {
                 channel="871196944754696233" // sparksiebot-live-demo
             />
         ),
-        "writeup": undefined,
+        "writeup": sparksiebot_writeup,
     },
     "web-contact-converter": {
         "title": "web-contact-converter",
@@ -77,9 +77,9 @@ export const oss = {
     "chipy": {
         "title": "chipy.org",
         "description":
-            "This is the Chicago Python user group (ChiPy) main Django website codebase. This PR updated the referral terms on group's job board page.",
+            "This is the Chicago Python user group (ChiPy) main Django website codebase. This PR updates how contact form success feedback is presented to the user; replaces old alert-msg behavior with a new modal instead.",
         "repo_url": "https://github.com/chicagopython/chipy.org",
-        "pr_url": "https://github.com/chicagopython/chipy.org/pull/397",
+        "pr_url": "https://github.com/chicagopython/chipy.org/pull/422",
     },
     "gh_changelog" : {
         "title": "github-changelog-generator",
