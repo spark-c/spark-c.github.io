@@ -340,6 +340,11 @@ button {
     margin-bottom: 5vh;
 }
 
+.backbutton {
+    margin-top: 5vh;
+    color: var(--main-font-color);
+}
+
 /* About */
 .accordion {
     display: flex;

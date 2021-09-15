@@ -8,8 +8,11 @@ const ProjectWriteup = ({ showDetails, project }) => {
             <button
                 className="backbutton"
                 onClick={() => showDetails(false, undefined)}>
-                Back
+                {"<< Back"}
             </button>
+            <h1>{project["title"]}</h1>
+            <p>{project["stack"]}</p>
+            <hr/><br/>
             {project["writeup"]}
         </div>
     );
