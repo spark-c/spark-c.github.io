@@ -28,6 +28,7 @@ export const projects = {
                 className="widgetbot"
                 server="742418152280948857" // sparksie test server
                 channel="871196944754696233" // sparksiebot-live-demo
+                height={600}
             />
         ),
         "writeup": undefined,
