@@ -21,7 +21,7 @@ export const projects = {
                 <p>The project goes varying periods of light maintainance, heavy development for additional functionality, and occasional upkeep work to refactor old code.</p>
             </div>
         ),
-        "stack": "Python (discord.py, SQLAlchemy) | Postgres | Heroku",
+        "stack": "Python (discord.py, SQLAlchemy, pytest) | Postgres",
         "cta": "Live!",
         "embed": null,
         // "embed": (
