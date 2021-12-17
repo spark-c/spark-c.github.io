@@ -23,9 +23,10 @@ const Projects = ({ isLargeScreen }) => {
     ];
 
     const ossToShow = [
-        oss["chipy"],
-        oss["gh_changelog"],
+        oss["chipy_modal"],
+        oss["chipy_responsive"],
         oss["hubspot"],
+        oss["gh_changelog"],
     ];
 
     const renderedProjects = showDetails?

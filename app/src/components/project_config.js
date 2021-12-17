@@ -70,12 +70,19 @@ export const projects = {
 }
 
 export const oss = {
-    "chipy": {
+    "chipy_modal": {
         "title": "chipy.org",
         "description":
-            "This is the Chicago Python user group (ChiPy) main Django website codebase. This PR updates how contact form success feedback is presented to the user; replaces old alert-msg behavior with a new modal instead. (WIP)",
+            "Chicago Python user group (ChiPy) Django codebase. Updates how contact form success feedback is presented to the user; replaces old alert-msg behavior with a new modal instead. Pending final review.",
         "repo_url": "https://github.com/chicagopython/chipy.org",
         "pr_url": "https://github.com/chicagopython/chipy.org/pull/422",
+    },
+    "chipy_responsive": {
+        "title": "chipy.org",
+        "description":
+            "ChiPy Django codebase. Fixes sponsor logo images not being correctly resized to fit the viewport; makes the logo images responsive for all screen sizes.",
+        "repo_url": "https://github.com/chicagopython/chipy.org",
+        "pr_url": "https://github.com/chicagopython/chipy.org/pull/430",
     },
     "hubspot": {
         "title": "hubspot-api-python",
