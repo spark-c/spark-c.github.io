@@ -16,21 +16,22 @@ export const projects = {
         "img-src": sparksiebot_img,
         "desc": (
             <div>
-                <p>This bot is created and maintained to provide commands for utility and entertainment on my personal Discord server!</p>
-                <p>The project goes varying periods of light maintainance, heavy development for additional functionality, and occasional upkeep work to refactor old code to meet my improving code-quality standards.</p>
-                <p><span className="strike">You can click the "Live!" link to interact with SparksieBOT</span> Oops! SparksieBOT is currently ignoring commands sent from this page :(</p>
+                <p>This bot is created and maintained to provide commands for utility and entertainment on my personal Discord server.</p>
+                <p>I've recently added a <span className="underline">test suite</span>! I'm very excited to have this working, as it will greatly ease further development and extension of more complex features.</p>
+                <p>The project goes varying periods of light maintainance, heavy development for additional functionality, and occasional upkeep work to refactor old code.</p>
             </div>
         ),
         "stack": "Python (discord.py, SQLAlchemy) | Postgres | Heroku",
         "cta": "Live!",
-        "embed": (
-            <WidgetBot
-                className="widgetbot"
-                server="742418152280948857" // sparksie test server
-                channel="871196944754696233" // sparksiebot-live-demo
-                height={600}
-            />
-        ),
+        "embed": null,
+        // "embed": (
+        //     <WidgetBot
+        //         className="widgetbot"
+        //         server="742418152280948857" // sparksie test server
+        //         channel="871196944754696233" // sparksiebot-live-demo
+        //         height={600}
+        //     />
+        // ),
         "writeup": undefined,
         // "writeup": sparksiebot_writeup,
     },
