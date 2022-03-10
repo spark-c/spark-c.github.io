@@ -19,6 +19,7 @@ const Projects = ({ isLargeScreen }) => {
     const projectsToShow = [
         projects["SparksieBOT"],
         projects["web-contact-converter"],
+        projects["solitaire"],
         projects["coffee-calculator"],
     ];
 

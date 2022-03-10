@@ -4,6 +4,7 @@ import WidgetBot from '@widgetbot/react-embed';
 import wcc_img from '../images/wcc.png';
 import sparksiebot_img from '../images/sparksiebot.png';
 import coffee_img from '../images/coffee-calc.png';
+import solitaire_img from '../images/solitaire.png'
 
 import sparksiebot_writeup from './writeups/SparksieBOT.js';
 
@@ -47,6 +48,22 @@ export const projects = {
             </div>
         ),
         "stack": "Python (Flask, SQLAlchemy) | JavaScript | Postgres | Heroku",
+        "cta": "Live!",
+        "embed": undefined,
+        "writeup": undefined,
+    },
+    "solitaire": {
+        "title": "solitaire",
+        "host-url": undefined,
+        "github-url": "https://github.com/spark-c/solitaire",
+        "img-src": solitaire_img,
+        "desc": (
+            <div>
+                <p>A 3-Card Klondike Solitaire game played at the command line, written in 100% Python.</p>
+                <p>I moved house from Illinois to Ohio at the end of November, and I didn't have internet access for about two weeks. I played a bunch of board/card games in that time -- including a bunch of Solitaire. I eventually got bored of the cards, so naturally... I'm writing my own Solitaire game!</p>
+            </div>
+        ),
+        "stack": "Python",
         "cta": "Live!",
         "embed": undefined,
         "writeup": undefined,
