@@ -9,7 +9,7 @@ import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
 import Blog from './Blog';
-import Construction from './Construction';
+// import Construction from './Construction';
 
 
 const App = () => {
@@ -63,7 +63,7 @@ const App = () => {
                     onSectionSelect={handleSectionSelect}
                     selected={selected} />
             }
-            <Construction />
+            {/* <Construction /> */}
 
             {isLargeScreen || drawHeader === true? renderedSection:undefined}
             {/* if on mobile and using Nameblock, DON'T draw a section! */}
